@@ -1,0 +1,5 @@
+[
+  {"text": "What is 5 + 5?", "options": ["8", "10", "12"], "correctAnswer": 1},
+  {"text": "What is 10 x 5?", "options": ["12", "50", "500"], "correctAnswer": 1},
+  {"text": "Which language is this?", "options": ["Java", "Kotlin", "Python"], "correctAnswer": 1}
+]

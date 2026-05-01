@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Quiz App</string>
+    <string name="instruction_text">Ask a Question &amp; Tap!</string>
+    <string name="next_button_label">Next Question</string>
+</resources>
