@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="?android:attr/windowBackground">
+
+    <LinearLayout
+            android:id="@+id/menuContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:visibility="visible">
+
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@android:drawable/ic_menu_edit"
+                app:tint="#6200EE" />
+
+        <TextView
+                android:id="@+id/quizTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quiz Master"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorOnSurface"
+                android:layout_marginBottom="40dp"
+                android:gravity="center"/>
+
+        <Button
+                android:id="@+id/startQuizBtn"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:text="Start Quiz"
+                app:cornerRadius="16dp"
+                android:layout_marginBottom="16dp"/>
+
+        <Button
+                android:id="@+id/menuExitBtn"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:text="Exit App"
+                app:cornerRadius="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/quizContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:visibility="gone">
+
+        <TextView
+                android:id="@+id/questionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorSurface"
+                android:elevation="4dp"
+                android:padding="24dp"
+                android:textSize="22sp"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold" />
+
+        <RadioGroup
+                android:id="@+id/optionsGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp">
+            <RadioButton android:id="@+id/option1" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:textColor="?attr/colorOnSurface"/>
+            <RadioButton android:id="@+id/option2" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:textColor="?attr/colorOnSurface"/>
+            <RadioButton android:id="@+id/option3" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:textColor="?attr/colorOnSurface"/>
+        </RadioGroup>
+
+        <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+
+        <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Submit Answer"
+                app:cornerRadius="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/scoreContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:visibility="gone">
+
+        <TextView
+                android:id="@+id/finalScoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32sp"
+                android:textColor="?attr/colorPrimary"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+        <Button
+                android:id="@+id/restartBtn"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="40dp"
+                android:text="Try Again"
+                app:cornerRadius="16dp" />
+
+        <Button
+                android:id="@+id/backToMenuBtn"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="16dp"
+                android:text="Back to Dashboard"
+                app:cornerRadius="16dp" />
+    </LinearLayout>
+</FrameLayout>

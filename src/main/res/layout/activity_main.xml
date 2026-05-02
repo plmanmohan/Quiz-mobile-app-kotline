@@ -1,140 +1,209 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:app="http://schemas.android.com/apk/res-auto"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             android:background="#F0F2F5">
-
-    <LinearLayout
-            android:id="@+id/menuContainer"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="32dp"
-            android:visibility="visible">
+            android:background="?android:attr/windowBackground">
 
-        <ImageView
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:src="@android:drawable/ic_menu_edit"
-                app:tint="#6200EE" />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/themeSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Dark Mode"
+                    android:textColor="?attr/colorOnSurface" />
+        </RelativeLayout>
 
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Quiz Master"
+                android:text="Math Toolkit"
                 android:textSize="32sp"
                 android:textStyle="bold"
-                android:textColor="#333333"
-                android:layout_marginBottom="40dp"/>
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="?attr/colorOnSurface"/>
 
-        <Button
-                android:id="@+id/startQuizBtn"
-                android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:text="Start Quiz"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:cornerRadius="16dp"
-                android:layout_marginBottom="16dp"/>
-
-        <Button
-                android:id="@+id/menuExitBtn"
-                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:text="Exit App"
-                android:textSize="18sp"
-                app:cornerRadius="16dp"
-                app:strokeWidth="2dp" />
-    </LinearLayout>
-
-    <LinearLayout
-            android:id="@+id/quizContainer"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="24dp"
-            android:visibility="gone">
-
-        <TextView
-                android:id="@+id/questionText"
+        <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
-                android:elevation="4dp"
-                android:padding="24dp"
-                android:text="Question text?"
-                android:textSize="22sp"
-                android:textColor="#222222"
-                android:textStyle="bold" />
+                android:layout_marginBottom="24dp"
+                android:hint="Select Your Class/Standard"
+                app:hintTextColor="?attr/colorPrimary">
 
-        <RadioGroup
-                android:id="@+id/optionsGroup"
+            <AutoCompleteTextView
+                    android:id="@+id/standardSelector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:textColor="?attr/colorOnSurface"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp">
-            <RadioButton android:id="@+id/option1" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:textSize="18sp" android:layout_marginBottom="8dp" />
-            <RadioButton android:id="@+id/option2" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:textSize="18sp" android:layout_marginBottom="8dp" />
-            <RadioButton android:id="@+id/option3" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:textSize="18sp" />
-        </RadioGroup>
+                android:columnCount="2"
+                android:alignmentMode="alignMargins">
 
-        <View
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
+            <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardFormula"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="4dp">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@android:drawable/ic_menu_edit" app:tint="#6200EE"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Math Formula" android:textStyle="bold" android:layout_marginTop="8dp" android:textColor="?attr/colorOnSurface"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
 
-        <Button
-                android:id="@+id/submitBtn"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:text="Submit Answer"
-                android:textSize="18sp"
-                app:cornerRadius="12dp" />
+            <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardTable"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="4dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="vertical">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@android:drawable/ic_menu_agenda" app:tint="#0088CC"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Math Table" android:textStyle="bold" android:layout_marginTop="8dp" android:textColor="?attr/colorOnSurface"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardQuiz"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="4dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="vertical">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@android:drawable/ic_menu_help" app:tint="#FF9800"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Quiz" android:textStyle="bold" android:layout_marginTop="8dp" android:textColor="?attr/colorOnSurface"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardRiddle"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="4dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="vertical">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@android:drawable/ic_dialog_info" app:tint="#E91E63"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Riddle" android:textStyle="bold" android:layout_marginTop="8dp" android:textColor="?attr/colorOnSurface"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardConverter"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="4dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="vertical">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@android:drawable/ic_menu_compass" app:tint="#4CAF50"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Converter" android:textStyle="bold" android:layout_marginTop="8dp" android:textColor="?attr/colorOnSurface"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardSymbols"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="4dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="vertical">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@android:drawable/ic_menu_sort_alphabetically" app:tint="#3F51B5"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Math Symbol" android:textStyle="bold" android:layout_marginTop="8dp" android:textColor="?attr/colorOnSurface"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardNotes"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="4dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="vertical">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@android:drawable/ic_menu_save" app:tint="#795548"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Notes" android:textStyle="bold" android:layout_marginTop="8dp" android:textColor="?attr/colorOnSurface"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardCreator"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="4dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="vertical">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@android:drawable/ic_menu_add" app:tint="#009688"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Creator" android:textStyle="bold" android:layout_marginTop="8dp" android:textColor="?attr/colorOnSurface"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </GridLayout>
     </LinearLayout>
-
-    <LinearLayout
-            android:id="@+id/scoreContainer"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="32dp"
-            android:visibility="gone">
-
-        <TextView
-                android:id="@+id/finalScoreText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Score: 0/0"
-                android:textSize="40sp"
-                android:textColor="#6200EE"
-                android:textStyle="bold"
-                android:gravity="center" />
-
-        <Button
-                android:id="@+id/restartBtn"
-                android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:layout_marginTop="48dp"
-                android:text="Try Again"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                app:cornerRadius="16dp" />
-
-        <Button
-                android:id="@+id/backToMenuBtn"
-                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:layout_marginTop="16dp"
-                android:text="Back to Menu"
-                android:textSize="18sp"
-                android:textColor="#6200EE"
-                app:strokeColor="#6200EE"
-                app:strokeWidth="2dp"
-                app:cornerRadius="16dp" />
-    </LinearLayout>
-
-</FrameLayout>
+</ScrollView>
