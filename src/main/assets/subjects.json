@@ -1,0 +1,10 @@
+[
+  {"id": "math", "name": "Math", "icon": "ic_math"},
+  {"id": "english", "name": "English", "icon": "ic_english"},
+  {"id": "science", "name": "Science", "icon": "ic_science"},
+  {"id": "geography", "name": "Geography", "icon": "ic_geography"},
+  {"id": "history", "name": "History", "icon": "ic_history"},
+  {"id": "hindi", "name": "Hindi", "icon": "ic_hindi"},
+  {"id": "sanscrit", "name": "Sanskrit", "icon": "ic_sanskrit"},
+  {"id": "gk", "name": "GK", "icon": "ic_gk"}
+]

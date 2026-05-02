@@ -3,8 +3,10 @@
         <item name="colorPrimary">#6200EE</item>
         <item name="colorOnPrimary">#FFFFFF</item>
 
-        <item name="android:windowBackground">?attr/colorSurface</item>
+        <item name="android:windowBackground">#F0F2F5</item>
 
-        <item name="colorOnSurface">#333333</item>
+        <item name="colorSurface">#FFFFFF</item>
+
+        <item name="colorOnSurface">#1A1A1A</item>
     </style>
 </resources>
