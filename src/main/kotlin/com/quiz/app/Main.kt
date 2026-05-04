@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupDropdown() {
-        val standards = arrayOf("Standard 1", "Standard 2", "Standard 3", "Standard 4")
+        val standards = arrayOf("Standard 5", "Standard 8", "Standard 3", "Standard 4")
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, standards)
         val selector = findViewById<AutoCompleteTextView>(R.id.standardSelector)
 
@@ -68,6 +68,11 @@ class MainActivity : AppCompatActivity() {
 
         selector.setOnItemClickListener { _, _, position, _ ->
             saveStandard(standards[position])
+            val newSelection = adapter.getItem(position).toString()
+            saveStandard(newSelection)
+
+            // 3. IMPORTANT: Reset the text again with 'false' filter to keep list full
+            selector.setText(newSelection, false)
         }
     }
 

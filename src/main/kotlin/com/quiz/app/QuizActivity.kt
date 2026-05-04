@@ -1,19 +1,27 @@
 package com.quiz.app
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.card.MaterialCardView
 import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 
-
+data class ChapterConfig(
+    val id: String,
+    val name: String
+)
 class QuizActivity : AppCompatActivity() {
 
     private var questionList: Array<Question> = arrayOf()
     private var currentIndex = 0
+    private var currentChapter = 0
     private var score = 0
     private var userStandard: String = ""
     private var userSubject: String = ""
+    private var formattedStd = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,39 +30,31 @@ class QuizActivity : AppCompatActivity() {
         // 1. Get Data from Intent
         userStandard = intent.getStringExtra("STD") ?: "Standard 1"
         userSubject = intent.getStringExtra("SUBJECT") ?: "math"
+        formattedStd = userStandard.replace(" ", "").lowercase()
 
-        // 2. Find UI Elements
-        val menuContainer = findViewById<LinearLayout>(R.id.menuContainer)
+// 1. Initially show only the Chapter Grid
+        updateUI("CHAPTERS")
+        setupChapterGrid()
+    }
+    // Move updateUI outside of showQuestions so other functions can use it
+    private fun updateUI(state: String) {
+        val chapterContainer = findViewById<GridLayout>(R.id.chapterContainer)
         val quizContainer = findViewById<LinearLayout>(R.id.quizContainer)
         val scoreContainer = findViewById<LinearLayout>(R.id.scoreContainer)
-        val startQuizBtn = findViewById<Button>(R.id.startQuizBtn)
-        val submitBtn = findViewById<Button>(R.id.submitBtn)
-        val restartBtn = findViewById<Button>(R.id.restartBtn)
-        val backToMenuBtn = findViewById<Button>(R.id.backToMenuBtn)
-        val menuExitBtn = findViewById<Button>(R.id.menuExitBtn)
+        chapterContainer.visibility = if (state == "CHAPTERS") View.VISIBLE else View.GONE
+        quizContainer.visibility = if (state == "QUIZ") View.VISIBLE else View.GONE
+        scoreContainer.visibility = if (state == "SCORE") View.VISIBLE else View.GONE
+    }
+    private fun showQuestions() {
         val questionDisplay = findViewById<TextView>(R.id.questionText)
+        val quizContainer = findViewById<LinearLayout>(R.id.quizContainer)
+        val scoreContainer = findViewById<LinearLayout>(R.id.scoreContainer)
         val optionsGroup = findViewById<RadioGroup>(R.id.optionsGroup)
-        val finalScoreText = findViewById<TextView>(R.id.finalScoreText)
-        val quizTitleText = findViewById<TextView>(R.id.quizTitleText)
-
         val rButtons = listOf<RadioButton>(
             findViewById(R.id.option1),
             findViewById(R.id.option2),
             findViewById(R.id.option3)
         )
-
-        // Set the Title
-        quizTitleText.text = "${userSubject.replaceFirstChar { it.uppercase() }} - $userStandard"
-
-        // Load Questions
-        loadQuestions()
-
-        // 3. UI Logic Functions
-        fun updateUI(state: String) {
-            menuContainer.visibility = if (state == "MENU") View.VISIBLE else View.GONE
-            quizContainer.visibility = if (state == "QUIZ") View.VISIBLE else View.GONE
-            scoreContainer.visibility = if (state == "SCORE") View.VISIBLE else View.GONE
-        }
 
         fun showQuestion() {
             optionsGroup.clearCheck()
@@ -66,18 +66,13 @@ class QuizActivity : AppCompatActivity() {
             }
             quizContainer.animate().alpha(1f).setDuration(250).start()
         }
+        updateUI("QUIZ")
+        showQuestion()
+        val submitBtn = findViewById<Button>(R.id.submitBtn)
 
-        // 4. Click Listeners
-        startQuizBtn.setOnClickListener {
-            if (questionList.isNotEmpty()) {
-                currentIndex = 0
-                score = 0
-                updateUI("QUIZ")
-                showQuestion()
-            } else {
-                Toast.makeText(this, "No questions found!", Toast.LENGTH_SHORT).show()
-            }
-        }
+        val finalScoreText = findViewById<TextView>(R.id.finalScoreText)
+
+        // 3. UI Logic Functions
 
         submitBtn.setOnClickListener {
             val selectedId = optionsGroup.checkedRadioButtonId
@@ -97,16 +92,11 @@ class QuizActivity : AppCompatActivity() {
                 Toast.makeText(this, "Please select an answer!", Toast.LENGTH_SHORT).show()
             }
         }
-
-        restartBtn.setOnClickListener { startQuizBtn.performClick() }
-        backToMenuBtn.setOnClickListener { finish() }
-        menuExitBtn.setOnClickListener { finishAffinity() }
     }
-
     private fun loadQuestions() {
         // Filename format: questions_standard1_math.json
-        val formattedStd = userStandard.replace(" ", "").lowercase()
-        val fileName = "questions_${formattedStd}_${userSubject}.json"
+
+        val fileName = "questions_${formattedStd}_ch${currentChapter}_${userSubject}.json"
         val assetManager = assets
         val files = assetManager.list("")
         files?.forEach { println("ASSET_DEBUG: Found file: $it") }
@@ -117,6 +107,47 @@ class QuizActivity : AppCompatActivity() {
         } catch (e: Exception) {
             e.printStackTrace()
             Toast.makeText(this, "Could not load: $fileName", Toast.LENGTH_LONG).show()
+        }
+    }
+
+    private fun setupChapterGrid() {
+        try {
+
+            val jsonString = assets.open("${formattedStd}_${userSubject}.json").bufferedReader().use { it.readText() }
+            val chapterList: List<ChapterConfig> = Gson().fromJson(jsonString, object : TypeToken<List<ChapterConfig>>() {}.type)
+
+            // These MUST match the IDs in your activity_main.xml
+            val chapterIds = arrayOf(R.id.ch1, R.id.ch2, R.id.ch3, R.id.ch4,
+                R.id.ch5)
+
+            for (i in chapterList.indices) {
+                if (i < chapterIds.size) {
+                    val chapterCard = findViewById<MaterialCardView>(chapterIds[i])
+                    val chapterContainer = findViewById<GridLayout>(R.id.chapterContainer)
+                    val title = chapterCard.findViewById<TextView>(R.id.chText)
+
+                    title.text = chapterList[i].name
+
+                    chapterCard.setOnClickListener {
+                        if (chapterList.isNotEmpty()) {
+                            currentChapter = chapterList[i].id.toInt()
+                            currentIndex = 0
+                            score = 0
+                            // Load Questions
+                            loadQuestions()
+                            if (questionList.isNotEmpty()) {
+                                updateUI("QUIZ")
+                                showQuestions() // Start the quiz logic
+                            }
+                        } else {
+                            Toast.makeText(this, "Error loading Chapters!", Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                }
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+            Toast.makeText(this, "Check <>.json and XML IDs!", Toast.LENGTH_SHORT).show()
         }
     }
 }
