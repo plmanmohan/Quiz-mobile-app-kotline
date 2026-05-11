@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupDropdown() {
-        val standards = arrayOf("Standard 5", "Standard 8", "Standard 3", "Standard 4")
+        val standards = arrayOf("Standard 4", "Standard 5", "Standard 6", "Standard 8")
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, standards)
         val selector = findViewById<AutoCompleteTextView>(R.id.standardSelector)
 
@@ -77,7 +77,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showStandardPopup() {
-        val standards = arrayOf("Standard 1", "Standard 2", "Standard 3", "Standard 4")
+        val standards = arrayOf("Standard 4", "Standard 5", "Standard 6", "Standard 8")
         AlertDialog.Builder(this)
             .setTitle("Choose Your Class")
             .setItems(standards) { _, which ->

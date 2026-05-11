@@ -1,0 +1,357 @@
+[
+  {
+    "id": 1,
+    "chapter": 4,
+    "text": "The region that lies on both sides of the equator is called the:",
+    "options": ["Polar region", "Temperate region", "Equatorial region", "Desert region"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 2,
+    "chapter": 4,
+    "text": "Which of these continents does NOT have an equatorial region mentioned in the text?",
+    "options": ["Asia", "Africa", "South America", "Europe"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 3,
+    "chapter": 4,
+    "text": "The equatorial region has which type of climate throughout the year?",
+    "options": ["Cold and dry", "Hot and wet", "Hot and dry", "Mild and rainy"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 4,
+    "chapter": 4,
+    "text": "The equatorial region lies between the Tropic of Cancer and the:",
+    "options": ["Arctic Circle", "Antarctic Circle", "Tropic of Capricorn", "Equator"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 5,
+    "chapter": 4,
+    "text": "What is the official language of the Democratic Republic of the Congo?",
+    "options": ["English", "French", "Spanish", "Portuguese"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 6,
+    "chapter": 4,
+    "text": "What is the currency used in the Democratic Republic of the Congo?",
+    "options": ["Dollar", "Euro", "Congolese franc", "Rupee"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 7,
+    "chapter": 4,
+    "text": "Which of these is the main religion practiced in the Democratic Republic of the Congo?",
+    "options": ["Christianity", "Buddhism", "Hinduism", "Judaism"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 8,
+    "chapter": 4,
+    "text": "Chapter 4 describes the Democratic Republic of the Congo as the 'Land of ____ Forests'.",
+    "options": ["Sparse", "Dry", "Dense", "Thorny"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 9,
+    "chapter": 4,
+    "text": "According to Map 4.1, which ocean lies to the east of Africa?",
+    "options": ["Atlantic Ocean", "Pacific Ocean", "Indian Ocean", "Arctic Ocean"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 10,
+    "chapter": 4,
+    "text": "In which continent is the Democratic Republic of the Congo located?",
+    "options": ["Asia", "Africa", "North America", "Australia"],
+    "correctAnswer": 1
+  },
+    {
+    "id": 11,
+    "chapter": 4,
+    "text": "The Democratic Republic of the Congo (DRC) is located in the basin of which river?",
+    "options": ["Nile River", "Niger River", "Zambezi River", "Congo River"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 12,
+    "chapter": 4,
+    "text": "Between which latitudes is the DRC located?",
+    "options": ["5°N and 10°S", "10°N and 5°S", "Equator and 20°S", "5°N and 5°S"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 13,
+    "chapter": 4,
+    "text": "Through which part of the country does the equator pass?",
+    "options": ["Southern part", "Central part", "Northern part", "Western part"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 14,
+    "chapter": 4,
+    "text": "What is the total area of the Democratic Republic of the Congo?",
+    "options": ["15.5 lakh square kilometres", "23.5 lakh square kilometres", "30.2 lakh square kilometres", "10.8 lakh square kilometres"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 15,
+    "chapter": 4,
+    "text": "The land of the DRC is described as a lowland shaped like a:",
+    "options": ["Bowl", "Saucer", "Plate", "Cone"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 16,
+    "chapter": 4,
+    "text": "In which part of the DRC are the Ruwenzori mountains located?",
+    "options": ["Southern part", "Eastern part", "Northern part", "Western part"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 17,
+    "chapter": 4,
+    "text": "What is the height of the highest peak in the Ruwenzori mountains?",
+    "options": ["4,109 metres", "5,109 metres", "6,109 metres", "3,109 metres"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 18,
+    "chapter": 4,
+    "text": "Which river is the second-longest river in Africa?",
+    "options": ["Nile River", "Zambezi River", "River Congo", "Limpopo River"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 19,
+    "chapter": 4,
+    "text": "River Congo is popularly known by what name?",
+    "options": ["The Lifeline of Africa", "The Highway of Central Africa", "The Great Tropical River", "The Southern Waterway"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 20,
+    "chapter": 4,
+    "text": "How many major lakes are located on the eastern boundary of the DRC?",
+    "options": ["Two", "Three", "Four", "Five"],
+    "correctAnswer": 2
+  },
+  
+  {
+    "id": 21,
+    "chapter": 4,
+    "text": "What is the average annual rainfall in the DRC?",
+    "options": ["Less than 50 cm", "Around 100 cm", "More than 200 cm", "Exactly 150 cm"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 22,
+    "chapter": 4,
+    "text": "Why are the forests in the DRC called 'evergreen forests'?",
+    "options": ["They are painted green", "They remain green throughout the year", "They only grow in the summer", "They have no leaves"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 23,
+    "chapter": 4,
+    "text": "Which of these trees is a major source of timber in the DRC?",
+    "options": ["Pine", "Mahogany", "Cactus", "Oak"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 24,
+    "chapter": 4,
+    "text": "The DRC is often referred to as the:",
+    "options": ["Desert of the world", "Natural zoo of the world", "Island of the world", "Mountain of the world"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 25,
+    "chapter": 4,
+    "text": "Which rare bird is found only in the Democratic Republic of the Congo?",
+    "options": ["Ostrich", "Congo peacock", "Penguin", "Bald eagle"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 26,
+    "chapter": 4,
+    "text": "The okapi is a forest-dwelling animal related to which two animals?",
+    "options": ["Lion and Tiger", "Giraffe and Zebra", "Elephant and Hippo", "Wolf and Fox"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 27,
+    "chapter": 4,
+    "text": "What type of climate does the DRC experience throughout the year?",
+    "options": ["Cold and dry", "Hot and wet", "Freezing", "Arid and sandy"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 28,
+    "chapter": 4,
+    "text": "According to the 'Let's Try' section, which country shares a boundary with the DRC?",
+    "options": ["Egypt", "South Africa", "Uganda", "Algeria"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 29,
+    "chapter": 4,
+    "text": "What makes it difficult to pass through the forests of the DRC?",
+    "options": ["The trees are too short", "The forests are very dense", "There is no water", "The ground is made of ice"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 30,
+    "chapter": 4,
+    "text": "Which of these animals is NOT mentioned as roaming the forests of the DRC?",
+    "options": ["Leopards", "Hippopotamus", "Polar bears", "Chimpanzees"],
+    "correctAnswer": 2
+  },
+
+  {
+    "id": 31,
+    "chapter": 5,
+    "text": "Where does most of the population in the DRC live?",
+    "options": ["In the mountains", "In coastal cities", "In the Congo river basin", "In the desert"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 32,
+    "chapter": 5,
+    "text": "Why do the people of the DRC wear light cotton clothes?",
+    "options": ["It is a tradition", "The climate is extremely hot and wet", "Cotton is the only crop grown", "They are very poor"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 33,
+    "chapter": 5,
+    "text": "How many ethnic groups are found in the DRC?",
+    "options": ["Over 50", "Nearly 100", "Over 200", "Exactly 500"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 34,
+    "chapter": 5,
+    "text": "Which of these is NOT mentioned as a main language of the people of Congo?",
+    "options": ["French", "English", "Bantu", "Spanish"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 35,
+    "chapter": 5,
+    "text": "What is the maximum height of the short-statured Pygmies?",
+    "options": ["1.2 metres", "1.4 metres", "1.6 metres", "1.8 metres"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 36,
+    "chapter": 5,
+    "text": "What are the two main occupations in the DRC?",
+    "options": ["Agriculture and mining", "Fishing and trade", "Teaching and medicine", "IT and banking"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 37,
+    "chapter": 5,
+    "text": "Which root is the most important food crop, often dried and pounded to make bread?",
+    "options": ["Potato", "Yam", "Cassava", "Carrot"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 38,
+    "chapter": 5,
+    "text": "Which of the following is listed as a cash crop in the DRC?",
+    "options": ["Maize", "Rice", "Coffee", "Wheat"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 39,
+    "chapter": 5,
+    "text": "The DRC has the world's leading reserves of which minerals?",
+    "options": ["Gold and Silver", "Cobalt and Diamonds", "Copper and Iron", "Tin and Zinc"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 40,
+    "chapter": 5,
+    "text": "Where do the Pygmies typically live?",
+    "options": ["In modern cities", "In the deeper forests", "On high mountains", "In coastal villages"],
+    "correctAnswer": 1
+  },
+
+  {
+    "id": 41,
+    "chapter": 4,
+    "text": "From which city does most of the trade in Congo take place?",
+    "options": ["Matadi", "Lubumbashi", "Kinshasa", "Kananga"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 42,
+    "chapter": 4,
+    "text": "Why are road and rail routes not well developed in the Congo?",
+    "options": ["Lack of funds", "Dense forests", "High mountains", "Extreme cold"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 43,
+    "chapter": 4,
+    "text": "Which river is considered important for water transport in the country?",
+    "options": ["Nile river", "Amazon river", "Congo river", "Niger river"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 44,
+    "chapter": 4,
+    "text": "Which city serves as the chief and biggest seaport of the DRC?",
+    "options": ["Kinshasa", "Kisangani", "Matadi", "Lubumbashi"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 45,
+    "chapter": 4,
+    "text": "Kinshasa is the second largest city in the world for which language?",
+    "options": ["English", "French", "Spanish", "Portuguese"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 46,
+    "chapter": 4,
+    "text": "Which city is the second largest in the country and located in a mineral-rich region?",
+    "options": ["Lubumbashi", "Matadi", "Kananga", "Kisangani"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 47,
+    "chapter": 4,
+    "text": "According to the text, which tribe is the original tribe of Congo?",
+    "options": ["Maasai", "Zulu", "Pygmy", "Bedouin"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 48,
+    "chapter": 4,
+    "text": "What is 'Cassava' as described in the glossary?",
+    "options": ["A type of cloth", "A type of plant whose roots are eaten", "A traditional dance", "A mineral"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 49,
+    "chapter": 4,
+    "text": "The equatorial region is characterized by what type of climate?",
+    "options": ["Cold and dry", "Hot and wet throughout the year", "Hot and dry", "Mild and rainy"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 50,
+    "chapter": 4,
+    "text": "Which of these is listed as a common tropical disease in the region?",
+    "options": ["Influenza", "Diabetes", "Yellow fever", "Scurvy"],
+    "correctAnswer": 2
+  }
+
+
+]

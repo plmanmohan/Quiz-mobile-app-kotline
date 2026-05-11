@@ -45,6 +45,7 @@ android {
     // This block is CRITICAL for the Mobile UI (Jetpack Compose)
     buildFeatures {
         compose = true
+        // viewBinding = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.4"

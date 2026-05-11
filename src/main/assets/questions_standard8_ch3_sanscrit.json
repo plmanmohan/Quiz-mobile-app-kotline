@@ -1,0 +1,357 @@
+[
+  {
+    "id": 1,
+    "chapter": 3,
+    "text": "What is the primary cause of changes in the weather?",
+    "options": ["The moon", "The tides", "The heat of the sun", "Human activity"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 2,
+    "chapter": 3,
+    "text": "The measurement of the warmth or coldness of the air is known as:",
+    "options": ["Humidity", "Wind", "Pressure", "Temperature"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 3,
+    "chapter": 3,
+    "text": "What term is used to describe the movement of air?",
+    "options": ["Wind", "Current", "Vapour", "Climate"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 4,
+    "chapter": 3,
+    "text": "Humidity is defined as the amount of _______ present in the air.",
+    "options": ["Dust", "Oxygen", "Water vapour", "Pollutants"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 5,
+    "chapter": 3,
+    "text": "How often can weather change?",
+    "options": ["Every year", "Every decade", "Every hour to hour", "Never"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 6,
+    "chapter": 3,
+    "text": "The average weather condition of a place for a long period of time is called:",
+    "options": ["Daily forecast", "Season", "Climate", "Atmosphere"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 7,
+    "chapter": 3,
+    "text": "According to the text, how many main seasons are there in India?",
+    "options": ["Two", "Three", "Four", "Five"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 8,
+    "chapter": 3,
+    "text": "Which of the following is NOT listed as one of the three main seasons in India?",
+    "options": ["Summer", "Winter", "Monsoon", "Autumn"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 9,
+    "chapter": 3,
+    "text": "What does the season influence in our daily lives?",
+    "options": ["The food we eat", "The clothes we wear", "The types of houses we live in", "All of the above"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 10,
+    "chapter": 3,
+    "text": "What does weather determine for farmers?",
+    "options": ["The price of land", "The crops they grow", "The tools they use", "The speed of tractors"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 11,
+    "chapter": 3,
+    "text": "Why are places near the equator generally much hotter?",
+    "options": ["They are closer to the sea", "They get more sunlight", "They have more mountains", "They are at a lower altitude"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 12,
+    "chapter": 3,
+    "text": "What happens to the temperature as we move away from the equator towards the poles?",
+    "options": ["It increases gradually", "It remains constant", "It decreases gradually", "It changes randomly"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 13,
+    "chapter": 3,
+    "text": "Polar regions experience a cold climate because the sun's rays become:",
+    "options": ["Vertical", "Stronger", "Slanting", "Direct"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 14,
+    "chapter": 3,
+    "text": "What is the technical term for the height of a place above sea-level?",
+    "options": ["Latitude", "Altitude", "Longitude", "Magnitude"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 15,
+    "chapter": 3,
+    "text": "Regarding altitude, what is the general rule mentioned in the text?",
+    "options": ["The higher we go, the hotter it is", "The lower we go, the cooler it is", "The higher we go, the cooler it is", "Altitude does not affect temperature"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 16,
+    "chapter": 3,
+    "text": "High mountains are covered with snow even in summers because of their:",
+    "options": ["Distance from the equator", "High altitude", "Proximity to poles", "Rainfall"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 17,
+    "chapter": 3,
+    "text": "Shimla is cooler than Ferozepur in summer primarily because it is located at a:",
+    "options": ["Higher altitude", "Higher latitude", "Lower altitude", "Lower latitude"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 18,
+    "chapter": 3,
+    "text": "According to the text, Darjeeling is located at about how many feet?",
+    "options": ["5000 ft", "6000 ft", "7000 ft", "8000 ft"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 19,
+    "chapter": 3,
+    "text": "Shimla and Ferozepur have different climates in summer despite being located at almost the same:",
+    "options": ["Altitude", "Longitude", "Latitude", "Time zone"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 20,
+    "chapter": 3,
+    "text": "Which factor influencing climate is discussed in the section mentioning Shimla and Darjeeling?",
+    "options": ["Distance from the Equator", "Direction of winds", "Humidity", "Height above the Sea-level"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 21,
+    "chapter": 3,
+    "text": "Why does Delhi experience an extreme climate throughout the year?",
+    "options": ["It is near the equator", "It is located far away from the coast", "It is at a high altitude", "It is surrounded by mountains"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 22,
+    "chapter": 3,
+    "text": "During the day, in which direction does a sea breeze blow?",
+    "options": ["Land to sea", "Sea to land", "North to South", "West to East"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 23,
+    "chapter": 3,
+    "text": "Why does a sea breeze occur during the daytime?",
+    "options": ["The sea heats up faster than the land", "The land heats up faster than the sea", "The moon pulls the wind", "The air over the sea is warmer"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 24,
+    "chapter": 3,
+    "text": "What is the breeze called that blows from land to sea at night?",
+    "options": ["Sea breeze", "Monsoon breeze", "Land breeze", "Polar breeze"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 25,
+    "chapter": 3,
+    "text": "Which statement is true regarding the cooling of land and sea at night?",
+    "options": ["Sea cools faster than land", "Both cool at the same rate", "Land cools faster than sea", "The land does not cool at night"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 26,
+    "chapter": 3,
+    "text": "Which type of winds bring moisture and cause rainfall?",
+    "options": ["Land breeze", "Sea breeze", "Monsoon winds", "Dry winds"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 27,
+    "chapter": 3,
+    "text": "What is the definition of humidity?",
+    "options": ["The speed of the wind", "The amount of water vapour in the air", "The temperature of the air", "The pressure of the atmosphere"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 28,
+    "chapter": 3,
+    "text": "The amount of humidity in a place depends largely on its nearness to the:",
+    "options": ["Mountains", "Equator", "Sea", "Desert"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 29,
+    "chapter": 3,
+    "text": "A place high above sea level is generally ______ than a place at sea level.",
+    "options": ["Hotter", "Cooler", "Drier", "More humid"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 30,
+    "chapter": 3,
+    "text": "At night, the warm air above the water rises, and cool breeze from the ______ takes its place.",
+    "options": ["Clouds", "Sky", "Land", "Ocean floor"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 31,
+    "chapter": 3,
+    "text": "What effect does a humid climate have on the human body?",
+    "options": ["It makes us feel energetic", "It makes us sweat a lot", "It makes us feel cold", "It helps us sleep better"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 32,
+    "chapter": 3,
+    "text": "In very cold places, rainfall occurs in the form of ____.",
+    "options": ["hail", "snowfall", "mist", "dew"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 33,
+    "chapter": 3,
+    "text": "During a thunderstorm, the air around lightning can reach a temperature of about ____.",
+    "options": ["10,000°C", "20,000°C", "30,000°C", "50,000°C"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 34,
+    "chapter": 3,
+    "text": "The temperature of the air around lightning is how many times hotter than the sun's surface?",
+    "options": ["Two times", "Three times", "Four times", "Five times"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 35,
+    "chapter": 3,
+    "text": "Climatic zones are grouped based on the intensity of ____ received by a particular place.",
+    "options": ["rainfall", "heat", "wind", "snowfall"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 36,
+    "chapter": 3,
+    "text": "Which zone is also known as the Tropical Zone?",
+    "options": ["Frigid Zone", "Temperate Zone", "Torrid Zone", "Polar Zone"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 37,
+    "chapter": 3,
+    "text": "The Torrid Zone receives the ____ rays of the Sun.",
+    "options": ["slanting", "direct", "curved", "weak"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 38,
+    "chapter": 3,
+    "text": "The Torrid Zone lies between the Tropic of Cancer and the ____.",
+    "options": ["Arctic Circle", "Equator", "Tropic of Capricorn", "Antarctic Circle"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 39,
+    "chapter": 3,
+    "text": "Which zone receives the slanting rays of the Sun?",
+    "options": ["Torrid Zone", "Temperate Zone", "Tropical Zone", "Equatorial Zone"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 40,
+    "chapter": 3,
+    "text": "The area which is neither very hot nor very cold is the ____.",
+    "options": ["Torrid Zone", "Frigid Zone", "Temperate Zone", "Tropical Zone"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 41,
+    "chapter": 3,
+    "text": "The North Frigid zone lies between the Arctic Circle and which point?",
+    "options": ["Equator", "North Pole", "South Pole", "Tropic of Cancer"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 42,
+    "chapter": 3,
+    "text": "What are the weather conditions that prevail over a place for a long time called?",
+    "options": ["Season", "Humidity", "Altitude", "Climate"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 43,
+    "chapter": 3,
+    "text": "What is the term for the amount of water vapour present in the air?",
+    "options": ["Breeze", "Humidity", "Altitude", "Climate"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 44,
+    "chapter": 3,
+    "text": "Altitude refers to the height of a place from which level?",
+    "options": ["Ground-level", "Sea-level", "Mountain-level", "Cloud-level"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 45,
+    "chapter": 3,
+    "text": "A gentle wind is commonly known as a:",
+    "options": ["Storm", "Cyclone", "Breeze", "Current"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 46,
+    "chapter": 3,
+    "text": "What describes the state of the atmosphere at a specific time?",
+    "options": ["Climate", "Weather", "Altitude", "Humidity"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 47,
+    "chapter": 3,
+    "text": "Changes in the weather give rise to:",
+    "options": ["Altitudes", "Breezes", "Seasons", "Tides"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 48,
+    "chapter": 3,
+    "text": "The closer a place is to the equator, the ______ its climate is.",
+    "options": ["Hotter", "Cooler", "Drier", "Wetter"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 49,
+    "chapter": 3,
+    "text": "According to the text, what happens to the temperature as altitude increases?",
+    "options": ["It gets hotter", "It stays the same", "It gets cooler", "It becomes humid"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 50,
+    "chapter": 3,
+    "text": "Which heat zone is characterized by a moderate climate?",
+    "options": ["Torrid zone", "Frigid zone", "Temperate zone", "Equatorial zone"],
+    "correctAnswer": 2
+  }
+]
+
+
+
+
+

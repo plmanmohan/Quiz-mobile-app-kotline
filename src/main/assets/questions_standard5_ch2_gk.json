@@ -1,0 +1,144 @@
+[
+  {
+    "id": 2,
+    "chapter": 2,
+    "text": "While facing the Sun in the morning, which direction is to your left?",
+    "options": ["North", "South", "East", "West"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 3,
+    "chapter": 2,
+    "text": "While facing the Sun in the morning, which direction is to your right?",
+    "options": ["North", "South", "East", "West"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 4,
+    "chapter": 2,
+    "text": "A map is a true representation of the Earth on a _____ surface.",
+    "options": ["Round", "Curved", "Flat", "Rough"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 5,
+    "chapter": 2,
+    "text": "Which of the following is a limitation of a globe mentioned in the text?",
+    "options": ["It can be carried easily", "It can show detailed cities", "It shows only one side of the Earth at a time", "It can be made for a small part of Earth"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 6,
+    "chapter": 2,
+    "text": "Who published the first book of maps?",
+    "options": ["Christopher Columbus", "Gerhardus Mercator", "Vasco da Gama", "Amerigo Vespucci"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 7,
+    "chapter": 2,
+    "text": "In which century was the first book of maps published?",
+    "options": ["14th century", "15th century", "16th century", "17th century"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 8,
+    "chapter": 2,
+    "text": "What is a book of maps called?",
+    "options": ["Dictionary", "Atlas", "Encyclopedia", "Novel"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 9,
+    "chapter": 2,
+    "text": "Which of these can show specific details of a small area like a town?",
+    "options": ["Globe", "Map", "Compass", "Telescope"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 10,
+    "chapter": 2,
+    "text": "Gerhardus Mercator was a map-maker from which region?",
+    "options": ["French", "Flemish", "British", "Indian"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 11,
+    "chapter": 2,
+    "text": "Which of the following is an advantage of using maps?",
+    "options": ["They are difficult to carry", "They cannot show continents", "They can be carried with great ease", "They only show one side of the earth"],
+    "correctAnswer": 2
+  },
+  
+  {
+    "id": 12,
+    "chapter": 2,
+    "text": "Which type of map shows landforms such as mountains, plateaus, and plains?",
+    "options": ["Political map", "Physical map", "Climate map", "Vegetation map"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 13,
+    "chapter": 2,
+    "text": "What do political maps primarily show?",
+    "options": ["Mountains and rivers", "Boundaries of countries, states, and cities", "Rainfall and temperature", "Forests and grasslands"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 14,
+    "chapter": 2,
+    "text": "Which maps are used to show the distribution of things like population and minerals?",
+    "options": ["Survey maps", "Distribution maps", "Physical maps", "Political maps"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 15,
+    "chapter": 2,
+    "text": "What information can be found on a climate map?",
+    "options": ["Railway tracks", "State capitals", "Temperature and rainfall", "Mountain heights"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 16,
+    "chapter": 2,
+    "text": "Vegetation maps are specifically designed to show the distribution of:",
+    "options": ["Roads and buildings", "Population", "Forests and grasslands", "Minerals and crops"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 17,
+    "chapter": 2,
+    "text": "Which type of map provides details of roads, building structures, and railway tracks?",
+    "options": ["Survey maps", "Physical maps", "Climate maps", "Political maps"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 18,
+    "chapter": 2,
+    "text": "According to the text, why do we need different types of maps?",
+    "options": ["Because one map cannot show all geographical features", "To make them look colorful", "Because paper is small", "To show only one country at a time"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 19,
+    "chapter": 2,
+    "text": "Based on Map 2.1 in the image, what kind of map is shown for India?",
+    "options": ["Political map", "Climate map", "Physical map", "Vegetation map"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 20,
+    "chapter": 2,
+    "text": "To find the weather details of a particular area, a weather map can be placed on a:",
+    "options": ["Physical map", "Survey map", "Road map", "Vegetation map"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 21,
+    "chapter": 2,
+    "text": "Which of these is NOT listed as a common type of map in the text?",
+    "options": ["Distribution maps", "Climate maps", "Star maps", "Survey maps"],
+    "correctAnswer": 2
+  }
+
+]

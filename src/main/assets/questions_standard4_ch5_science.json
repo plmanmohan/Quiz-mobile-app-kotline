@@ -1,0 +1,224 @@
+[
+  {
+    "id": 1,
+    "chapter": 5,
+    "text": "What is the capital city of Greenland?",
+    "options": ["Copenhagen", "Nuuk", "Oslo", "Reykjavik"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 2,
+    "chapter": 5,
+    "text": "Greenland is a part of which country?",
+    "options": ["Canada", "USA", "Denmark", "Norway"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 3,
+    "chapter": 5,
+    "text": "Which ocean is located in the northern polar region?",
+    "options": ["Indian Ocean", "Atlantic Ocean", "Arctic Ocean", "Pacific Ocean"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 4,
+    "chapter": 5,
+    "text": "Greenland is separated from the northern islands of Canada by Baffin Bay and the _______.",
+    "options": ["Davis Strait", "Palk Strait", "Bering Strait", "Gibraltar Strait"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 5,
+    "chapter": 5,
+    "text": "Approximately what percentage of Greenland is covered with ice sheets?",
+    "options": ["50%", "60%", "70%", "80%"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 6,
+    "chapter": 5,
+    "text": "Greenland is also known as the _______ region.",
+    "options": ["Tropical", "Desert", "Tundra", "Savanna"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 7,
+    "chapter": 5,
+    "text": "For how many months in a year is the land near the coast typically covered with ice?",
+    "options": ["Three months", "Six months", "Nine months", "Twelve months"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 8,
+    "chapter": 5,
+    "text": "Why must one use sunglasses in Greenland?",
+    "options": ["To look stylish", "To protect eyes from ice glare", "Because of high temperatures", "To see through the fog"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 9,
+    "chapter": 5,
+    "text": "What is the total area of Greenland mentioned in the text?",
+    "options": ["10.5 lakh sq km", "15.5 lakh sq km", "21.5 lakh sq km", "30.5 lakh sq km"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 10,
+    "chapter": 5,
+    "text": "What happens to big blocks of ice during the spring season?",
+    "options": ["They melt completely", "They turn into soil", "They break off and slide down", "They change color"],
+    "correctAnswer": 2
+  },
+    {
+    "id": 11,
+    "chapter": 5,
+    "text": "Why are icebergs considered very dangerous for ships in the Arctic region?",
+    "options": ["They melt and create giant waves", "They are made of salt", "They are often not visible due to thick fog", "They move faster than ships"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 12,
+    "chapter": 5,
+    "text": "During the winter season in Greenland, what happens to the sun?",
+    "options": ["It shines for 24 hours", "It does not rise above the horizon", "It only appears at midnight", "It stays at the highest point in the sky"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 13,
+    "chapter": 5,
+    "text": "Why is Greenland referred to as the 'Land of the Midnight Sun'?",
+    "options": ["The sun can be seen even at midnight in summers", "The moon looks like the sun at night", "It is always dark during the day", "The sun only rises at midnight"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 14,
+    "chapter": 5,
+    "text": "What is the average temperature in Greenland during the summer?",
+    "options": ["-23°C", "25°C", "5°C", "15°C"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 15,
+    "chapter": 5,
+    "text": "The average winter temperature in Greenland is around:",
+    "options": ["-23°C", "0°C", "5°C", "-5°C"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 16,
+    "chapter": 5,
+    "text": "How do animals in this region protect themselves from the extreme cold?",
+    "options": ["By migrating to the desert", "Thin skin and short hair", "Thick, furry coats and a heavy layer of fat", "By sleeping under the water"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 17,
+    "chapter": 5,
+    "text": "Which of these is listed as a common large animal of the Arctic region?",
+    "options": ["Elephant", "Musk ox", "Giraffe", "Tiger"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 18,
+    "chapter": 5,
+    "text": "What is the French-Canadian name for a large deer closely related to the reindeer?",
+    "options": ["Caribou", "Huskies", "Wolverine", "Elephant seal"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 19,
+    "chapter": 5,
+    "text": "According to the 'Do You Know?' section, which is the largest seal?",
+    "options": ["Harp seal", "Southern elephant seal", "Leopard seal", "Fur seal"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 20,
+    "chapter": 5,
+    "text": "Which of the following is mentioned as one of the smaller animals in the region?",
+    "options": ["Polar bear", "Reindeer", "Wolverine", "Caribou"],
+    "correctAnswer": 2
+  },
+  {"id": 21, "chapter": 5, "text": "Inuits are also commonly called by which other name?", "options": ["Bedouins", "Eskimos", "Sherpas", "Nomads"], "correctAnswer": 1},
+  {"id": 22, "chapter": 5, "text": "What type of skin color is described for the Inuits?", "options": ["Fair white", "Olive green", "Copper yellow", "Dark brown"], "correctAnswer": 2},
+  {"id": 23, "chapter": 5, "text": "What are the traditional fur jackets worn by Inuits called?", "options": ["Kimono", "Parkas", "Ponchos", "Blazers"], "correctAnswer": 1},
+  {"id": 24, "chapter": 5, "text": "What material is used to make Inuit boots?", "options": ["Cow leather", "Seal skin", "Wool", "Synthetic rubber"], "correctAnswer": 1},
+  {"id": 25, "chapter": 5, "text": "What is the main hunting weapon used by the Inuits?", "options": ["Bow and arrow", "Spear", "Harpoon", "Slingshot"], "correctAnswer": 2},
+  {"id": 26, "chapter": 5, "text": "What are the snow houses built by Inuits called?", "options": ["Tepees", "Igloos", "Yurts", "Longhouses"], "correctAnswer": 1},
+  {"id": 27, "chapter": 5, "text": "What shape is an igloo?", "options": ["Pyramid", "Square", "Dome-like", "Rectangular"], "correctAnswer": 2},
+  {"id": 28, "chapter": 5, "text": "What is placed on the floor of an igloo to keep the house warm?", "options": ["Carpets", "Animal skins", "Electric heaters", "Dry grass"], "correctAnswer": 1},
+  {"id": 29, "chapter": 5, "text": "Which of these animals is mentioned as wildlife in Greenland?", "options": ["Tiger", "Polar Bear", "Elephant", "Giraffe"], "correctAnswer": 1},
+  {"id": 30, "chapter": 5, "text": "What are the main occupations of the Inuit people?", "options": ["Farming and Mining", "Hunting and Fishing", "Trading and Banking", "Teaching and Law"], "correctAnswer": 1},
+    {
+    "id": 31,
+    "chapter": 5,
+    "text": "What happens to the igloo at the end of the winter season?",
+    "options": ["It gets bigger", "It starts melting", "It turns into stone", "It is painted"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 32,
+    "chapter": 5,
+    "text": "What are the animal hide tents used during the summer called?",
+    "options": ["Igloos", "Tou-pigs", "Tepees", "Kayaks"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 33,
+    "chapter": 5,
+    "text": "Which city is the capital and largest town of Greenland?",
+    "options": ["Sisimiut", "Nuuk", "Ilulissat", "Thule"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 34,
+    "chapter": 5,
+    "text": "What is the total population of Greenland according to the text?",
+    "options": ["10,000", "56,000", "5,600", "100,000"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 35,
+    "chapter": 5,
+    "text": "Which animals are used to pull sledges on snowy ground?",
+    "options": ["Polar bears", "Huskies", "Reindeer", "Horses"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 36,
+    "chapter": 5,
+    "text": "What are the small boats used by Eskimos for hunting sea animals called?",
+    "options": ["Canoes", "Kayaks", "Rafts", "Sledges"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 37,
+    "chapter": 5,
+    "text": "Apart from Nuuk, which of these is mentioned as a big city in Greenland?",
+    "options": ["London", "Paris", "Sisimiut", "Oslo"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 38,
+    "chapter": 5,
+    "text": "What materials are modern houses in Greenland built with?",
+    "options": ["Ice and snow", "Wood and stone", "Mud and straw", "Animal hides"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 39,
+    "chapter": 5,
+    "text": "What feature of Nuuk's harbour makes it important?",
+    "options": ["It is very deep", "It is ice-free the whole year", "It is made of wood", "It is always frozen"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 40,
+    "chapter": 5,
+    "text": "Which services are now becoming the main means of transport in Greenland?",
+    "options": ["Dog sledges", "Shipping and air services", "Trains and buses", "Bicycles"],
+    "correctAnswer": 1
+  }
+
+
+]

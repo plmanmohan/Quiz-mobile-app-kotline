@@ -1,0 +1,36 @@
+{
+  "practice_modes": [
+    {
+      "id": "quick",
+      "name": "Quick Practice",
+      "details": "10 Questions • No Timer",
+      "question_count": 10,
+      "timer_seconds": 0,
+      "icon_color": "#FFEB3B"
+    },
+    {
+      "id": "timed",
+      "name": "Timed Challenge",
+      "details": "10 Questions • 10 Minutes",
+      "question_count": 10,
+      "timer_seconds": 600,
+      "icon_color": "#FFEB3B"
+    },
+    {
+      "id": "standard",
+      "name": "Standard Practice",
+      "details": "25 Questions • No Timer",
+      "question_count": 25,
+      "timer_seconds": 0,
+      "icon_color": "#2196F3"
+    },
+    {
+      "id": "full",
+      "name": "Full Test",
+      "details": "50 Questions • 45 Minutes",
+      "question_count": 50,
+      "timer_seconds": 2700,
+      "icon_color": "#F44336"
+    }
+  ]
+}

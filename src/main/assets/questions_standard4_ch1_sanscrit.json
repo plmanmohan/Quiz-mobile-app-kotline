@@ -1,0 +1,279 @@
+[
+ {
+    "id": 1,
+    "chapter": 1,
+    "text": "How many continents are there on the earth?",
+    "options": ["Six", "Three", "Seven"],
+    "correctAnswer": 2
+  },
+
+  {
+    "id": 2,
+    "chapter": 1,
+    "text": "How did people in the past believe the earth was shaped?",
+    "options": ["Spherical", "Flat", "Oval"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 3,
+    "chapter": 1,
+    "text": "What helped prove that the earth is spherical in shape?",
+    "options": ["Ancient drawings", "Satellite pictures", "Old stories"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 4,
+    "chapter": 1,
+    "text": "Which phrase describes the earth's shape most accurately?",
+    "options": ["A perfect sphere", "A square block", "A slightly flattened ball"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 5,
+    "chapter": 1,
+    "text": "Where is the earth slightly flat?",
+    "options": ["At the top and bottom", "At the centre", "On the sides"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 6,
+    "chapter": 1,
+    "text": "What percentage of the earth's surface is covered by water?",
+    "options": ["29 per cent", "50 per cent", "71 per cent"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 7,
+    "chapter": 1,
+    "text": "What percentage of the earth's surface consists of land?",
+    "options": ["71 per cent", "29 per cent", "15 per cent"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 8,
+    "chapter": 1,
+    "text": "What are the large land masses on earth called?",
+    "options": ["Islands", "Continents", "Oceans"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 9,
+    "chapter": 1,
+    "text": "What are the large water bodies on earth called?",
+    "options": ["Oceans", "Rivers", "Lakes"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 10,
+    "chapter": 1,
+    "text": "Where does the earth bulge?",
+    "options": ["At the poles", "At the top", "At the centre"],
+    "correctAnswer": 2
+  },
+  
+  {
+    "id": 11,
+    "chapter": 1,
+    "text": "Which continent is the largest in the world?",
+    "options": ["Africa", "Asia", "North America"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 12,
+    "chapter": 1,
+    "text": "Which is the smallest continent?",
+    "options": ["Australia", "Europe", "Antarctica"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 13,
+    "chapter": 1,
+    "text": "Which country is the largest in terms of area?",
+    "options": ["India", "Russia", "China"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 14,
+    "chapter": 1,
+    "text": "India is the ______ largest country in the world.",
+    "options": ["Fifth", "Sixth", "Seventh"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 15,
+    "chapter": 1,
+    "text": "How many major oceans are there?",
+    "options": ["Three", "Five", "Seven"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 16,
+    "chapter": 1,
+    "text": "Which ocean is the largest in the world?",
+    "options": ["Pacific Ocean", "Atlantic Ocean", "Indian Ocean"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 17,
+    "chapter": 1,
+    "text": "Which ocean is the smallest?",
+    "options": ["Southern Ocean", "Arctic Ocean", "Atlantic Ocean"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 18,
+    "chapter": 1,
+    "text": "What is a model of the earth called?",
+    "options": ["Globe", "Map", "Axis"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 19,
+    "chapter": 1,
+    "text": "Who was the Portuguese explorer that proved the earth was round?",
+    "options": ["Vasco da Gama", "Christopher Columbus", "Ferdinand Magellan"],
+    "correctAnswer": 2
+  },
+  
+  {
+    "id": 20,
+    "chapter": 1,
+    "text": "The word 'latitude' comes from the Latin word 'Latus', which means:",
+    "options": ["Long", "Wide", "Round"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 21,
+    "chapter": 1,
+    "text": "In which direction do lines of latitude run on the globe?",
+    "options": ["North to South", "East to West", "Diagonal"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 22,
+    "chapter": 1,
+    "text": "Which imaginary line cuts the earth into the Northern and Southern Hemispheres?",
+    "options": ["Equator", "Tropic of Cancer", "Arctic Circle"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 23,
+    "chapter": 1,
+    "text": "What is the degree of latitude for the Equator?",
+    "options": ["90°", "23½°", "0°"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 24,
+    "chapter": 1,
+    "text": "How many latitudes are drawn to the south of the equator?",
+    "options": ["180", "45", "90"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 25,
+    "chapter": 1,
+    "text": "What is the degree for the Tropic of Capricorn?",
+    "options": ["23½° N", "23½° S", "66½° S"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 26,
+    "chapter": 1,
+    "text": "The Arctic Circle is located at which degree?",
+    "options": ["66½° N", "66½° S", "90° N"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 27,
+    "chapter": 1,
+    "text": "What is another name for lines of latitude?",
+    "options": ["Meridians", "Parallels", "Axis"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 28,
+    "chapter": 1,
+    "text": "What are the imaginary lines running from north to south called?",
+    "options": ["Lines of longitude", "Lines of latitude", "Equator"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 29,
+    "chapter": 1,
+    "text": "Unlike latitudes, where do all lines of longitude meet?",
+    "options": ["At the Equator", "At the Tropics", "At the two poles"],
+    "correctAnswer": 2
+  },
+  
+  {
+    "id": 30,
+    "chapter": 1,
+    "text": "The Prime Meridian passes through Greenwich, which is located near which city?",
+    "options": ["Paris", "New York", "London"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 31,
+    "chapter": 1,
+    "text": "The Prime Meridian is marked as which degree?",
+    "options": ["0°", "90°", "180°"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 32,
+    "chapter": 1,
+    "text": "How many meridians are there in total on the earth?",
+    "options": ["180", "360", "90"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 33,
+    "chapter": 1,
+    "text": "In which direction is India located relative to the Prime Meridian?",
+    "options": ["West", "North", "East"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 34,
+    "chapter": 1,
+    "text": "What is the 180° longitude line known as?",
+    "options": ["Equator", "International Date Line", "Arctic Circle"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 35,
+    "chapter": 1,
+    "text": "What is the time interval between two meridians?",
+    "options": ["1 minute", "4 minutes", "10 minutes"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 36,
+    "chapter": 1,
+    "text": "What is the network of criss-crossing parallels and meridians called?",
+    "options": ["Grid", "Web", "Map"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 37,
+    "chapter": 1,
+    "text": "According to the text, what is the location of Delhi?",
+    "options": ["77°E and 28°N", "28°E and 77°N", "80°E and 30°N"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 38,
+    "chapter": 1,
+    "text": "What is a small model of the earth called?",
+    "options": ["Map", "Globe", "Axis"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 39,
+    "chapter": 1,
+    "text": "What are the end points on the earth's axis called?",
+    "options": ["Grids", "Poles", "Equators"],
+    "correctAnswer": 1
+  }
+]

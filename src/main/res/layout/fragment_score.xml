@@ -5,12 +5,25 @@
             android:layout_height="match_parent"
             android:padding="16dp">
 
-    <GridLayout
-            android:id="@+id/chapterContainer"
+    <LinearLayout
+            android:id="@+id/scoreContainer"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:columnCount="1"
-            android:alignmentMode="alignMargins">
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:visibility="gone">
 
-    </GridLayout>
+        <TextView
+                android:id="@+id/finalScoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+        <Button android:id="@+id/restartBtn" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="30dp" android:text="Try Again" />
+        <Button android:id="@+id/backToMenuBtn" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="match_parent" android:layout_height="60dp" android:text="Go to Dashboard" />
+    </LinearLayout>
 </ScrollView>
