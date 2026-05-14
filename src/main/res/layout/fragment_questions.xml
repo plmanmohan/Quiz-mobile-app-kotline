@@ -4,7 +4,35 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              android:padding="24dp">
+              android:padding="24dp"
+              android:background="?android:attr/windowBackground">
+
+    <TextView
+            android:id="@+id/chapterTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chapter Name"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray" />
+
+    <ProgressBar
+            android:id="@+id/quizProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+    <TextView
+            android:id="@+id/timerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Time: 00:30"
+            android:textSize="18sp"
+            android:textColor="#E91E63"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
 
     <TextView
             android:id="@+id/questionText"
@@ -22,12 +50,36 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp">
-        <RadioButton android:id="@+id/option1" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:textColor="?attr/colorOnSurface" />
-        <RadioButton android:id="@+id/option2" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:textColor="?attr/colorOnSurface" />
-        <RadioButton android:id="@+id/option3" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:textColor="?attr/colorOnSurface" />
+        <RadioButton android:id="@+id/option1" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" />
+        <RadioButton android:id="@+id/option2" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" />
+        <RadioButton android:id="@+id/option3" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" />
     </RadioGroup>
 
     <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
 
-    <Button android:id="@+id/submitBtn" android:layout_width="match_parent" android:layout_height="55dp" android:text="Submit" />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/prevBtn"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:text="Previous"
+                android:visibility="invisible" />
+
+        <View
+                android:layout_width="12dp"
+                android:layout_height="match_parent"/>
+
+        <Button
+                android:id="@+id/nextBtn"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:text="Next" />
+
+    </LinearLayout>
 </LinearLayout>

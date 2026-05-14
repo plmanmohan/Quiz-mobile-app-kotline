@@ -40,6 +40,8 @@ class ChapterFragment : Fragment() {
     private var currentIndex = 0
     private var currentChapter = 0
     private var modes: List<PracticeMode> = listOf()
+    private var totalQuestions = 0
+    private var timeLimit = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -90,8 +92,8 @@ class ChapterFragment : Fragment() {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 val selected = modes[position]
                 modeDescription?.text = "Details: ${selected.details}"
-                val totalQuestions = selected.question_count
-                val timeLimit = selected.timer_seconds
+                totalQuestions = selected.question_count
+                timeLimit = selected.timer_seconds
 
                 if (timeLimit > 0) {
                     // Logic for timed mode (e.g., show a clock icon)
@@ -130,7 +132,7 @@ class ChapterFragment : Fragment() {
 //                            val selectedCount = spinner.selectedItem.toString()
 
                             // Tell the Activity to swap fragments
-                            (activity as? QuizActivity)?.switchToQuestions(currentChapter)
+                            (activity as? QuizActivity)?.switchToQuestions(currentChapter, totalQuestions, timeLimit)
 
                         } else {
                             Toast.makeText(requireContext(), "Error loading Chapters!", Toast.LENGTH_SHORT).show()

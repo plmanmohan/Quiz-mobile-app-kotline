@@ -38,12 +38,14 @@ class QuizActivity : AppCompatActivity() {
             .commit()
     }
     // Note: No 'private' keyword here
-    fun switchToQuestions(chapterId: Int) {
+    fun switchToQuestions(chapterId: Int, totalQuestions: Int, timeLimit: Int) {
         val fragment = QuestionFragment()
 
         // 1. Pack the "Suitcase" (Bundle)
         val bundle = Bundle()
         bundle.putInt("CHAPTER_ID", chapterId)
+        bundle.putInt("TOTAL_QUESTION", totalQuestions)
+        bundle.putInt("TIME_LIMIT", timeLimit)
         bundle.putString("STD", userStandard)   // Pass the standard too
         bundle.putString("SUBJECT", userSubject) // Pass the subject too
         fragment.arguments = bundle

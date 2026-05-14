@@ -1,106 +1,243 @@
 package com.quiz.app
 
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.LinearLayout
-import android.widget.RadioButton
-import android.widget.RadioGroup
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.fragment.app.Fragment
-import com.google.android.material.card.MaterialCardView
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import kotlin.collections.get
-import kotlin.text.get
 
 class QuestionFragment : Fragment() {
 
     private var userStandard: String = ""
     private var userSubject: String = ""
-    private var formattedStd:String? = null
-    private var currentIndex = 0
-    private var score = 0
+    private var formattedStd: String? = null
     private var currentChapter = 0
+
+    private var currentIndex = 0
+    private var questionList: List<Question> = listOf()
+    private val userAnswers = mutableMapOf<Int, Int>()
+
+    private var MAX_QUESTIONS = 5
+    private var MAX_TIME_MINUTES = 5 // From arguments
+    private var countDownTimer: CountDownTimer? = null
+
+    private lateinit var timerText: TextView
+    private lateinit var questionDisplay: TextView
+    private lateinit var optionsGroup: RadioGroup
+    private lateinit var progressBar: ProgressBar
+    private lateinit var prevBtn: Button
+    private lateinit var nextBtn: Button
+    private lateinit var rButtons: List<RadioButton>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            userStandard = it.getString("STD").toString()
-            userSubject = it.getString("SUBJECT").toString()
+            userStandard = it.getString("STD", "")
+            userSubject = it.getString("SUBJECT", "")
             currentChapter = it.getInt("CHAPTER_ID", 1)
+            MAX_QUESTIONS = it.getInt("TOTAL_QUESTION", 5)
+            MAX_TIME_MINUTES = it.getInt("TIME_LIMIT", 5) // Assuming this is in minutes
             formattedStd = userStandard.replace(" ", "").lowercase()
         }
     }
 
-    // 2. Layout Setup (Mandatory for UI)
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        // Just return the inflated layout, don't do logic here
         return inflater.inflate(R.layout.fragment_questions, container, false)
     }
 
-    // 3. UI Logic (Best Practice)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        loadQuestions(view)
+
+        // Initialize UI References
+        timerText = view.findViewById(R.id.timerText)
+        questionDisplay = view.findViewById(R.id.questionText)
+        optionsGroup = view.findViewById(R.id.optionsGroup)
+        progressBar = view.findViewById(R.id.quizProgress)
+        nextBtn = view.findViewById(R.id.nextBtn)
+        prevBtn = view.findViewById(R.id.prevBtn)
+
+        rButtons = listOf(
+            view.findViewById(R.id.option1),
+            view.findViewById(R.id.option2),
+            view.findViewById(R.id.option3)
+        )
+
+        setupQuiz(view)
+        startGlobalTimer() // Start the timer ONCE for the whole exam
     }
-    private fun loadQuestions(view: View) {
-        // Filename format: questions_standard1_math.json
+
+    private fun startGlobalTimer() {
+        // Safety check: If MAX_TIME_MINUTES is 0 or negative, default to 5 minutes
+        val timeInMinutes = if (MAX_TIME_MINUTES > 0) MAX_TIME_MINUTES else 5
+        val totalMillis = (timeInMinutes * 60 * 1000).toLong()
+
+        countDownTimer?.cancel()
+
+        countDownTimer = object : CountDownTimer(totalMillis, 1000) {
+            override fun onTick(millisUntilFinished: Long) {
+                val mins = (millisUntilFinished / 1000) / 60
+                val secs = (millisUntilFinished / 1000) % 60
+
+                // Only update text if the fragment is still visible
+                if (isAdded) {
+                    timerText.text = String.format("Time: %02d:%02d", mins, secs)
+                }
+            }
+
+            override fun onFinish() {
+                // ONLY call this when the clock actually hits 00:00
+                if (isAdded) {
+                    calculateScore()
+                }
+            }
+        }.start()
+    }
+
+    private fun setupQuiz(view: View) {
         val fileName = "questions_${formattedStd}_ch${currentChapter}_${userSubject}.json"
         try {
             val jsonString = requireContext().assets.open(fileName).bufferedReader().use { it.readText() }
-            val questionList: List<Question> = Gson().fromJson(jsonString, object : TypeToken<List<Question>>() {}.type)
-            val questionDisplay = view.findViewById<TextView>(R.id.questionText)
-            val quizContainer = view.findViewById<LinearLayout>(R.id.quizContainer)
-            // val scoreContainer = view.findViewById<LinearLayout>(R.id.scoreContainer)
-            val optionsGroup = view.findViewById<RadioGroup>(R.id.optionsGroup)
-            val rButtons = listOf<RadioButton>(
-                view.findViewById(R.id.option1),
-                view.findViewById(R.id.option2),
-                view.findViewById(R.id.option3)
-            )
-            fun showQuestion() {
-                optionsGroup.clearCheck()
-                quizContainer.alpha = 0f
-                val q = questionList[currentIndex]
-                questionDisplay.text = q.text
-                for (i in rButtons.indices) {
-                    rButtons[i].text = q.options[i]
-                }
-                quizContainer.animate().alpha(1f).setDuration(250).start()
-            }
-            showQuestion()
-            val submitBtn = view.findViewById<Button>(R.id.submitBtn)
+            val allQuestions: List<Question> = Gson().fromJson(jsonString, object : TypeToken<List<Question>>() {}.type)
 
-            val finalScoreText = view.findViewById<TextView>(R.id.finalScoreText)
+            questionList = allQuestions.shuffled().take(MAX_QUESTIONS)
 
-            // 3. UI Logic Functions
+            val chapterTitle = view.findViewById<TextView>(R.id.chapterTitle)
+            chapterTitle.text = "Chapter $currentChapter: ${userSubject.uppercase()}"
+            progressBar.max = questionList.size
 
-            submitBtn.setOnClickListener {
-                val selectedId = optionsGroup.checkedRadioButtonId
-                if (selectedId != -1) {
-                    val selectedBtn = view.findViewById<RadioButton>(selectedId)
-                    val selectedIndex = rButtons.indexOf(selectedBtn)
-                    if (selectedIndex == questionList[currentIndex].correctAnswer) score++
-
+            // Button Listeners
+            nextBtn.setOnClickListener {
+                saveCurrentAnswer()
+                if (currentIndex < questionList.size - 1) {
                     currentIndex++
-                    if (currentIndex < questionList.size) {
-                        showQuestion()
-                    } else {
-                        finalScoreText.text = "Final Score:\n$score / ${questionList.size}"
-
-                    }
+                    updateUI()
                 } else {
-                    Toast.makeText(requireContext(), "Please select an answer!", Toast.LENGTH_SHORT).show()
+                    calculateScore() // Final Submission
                 }
             }
+
+            prevBtn.setOnClickListener {
+                saveCurrentAnswer()
+                if (currentIndex > 0) {
+                    currentIndex--
+                    updateUI()
+                }
+            }
+
+            updateUI()
 
         } catch (e: Exception) {
-            e.printStackTrace()
-            Toast.makeText(requireContext(), "Could not load: $fileName", Toast.LENGTH_LONG).show()
+            Toast.makeText(requireContext(), "Error loading quiz", Toast.LENGTH_SHORT).show()
         }
     }
 
+    private fun saveCurrentAnswer() {
+        val selectedId = optionsGroup.checkedRadioButtonId
+        if (selectedId != -1) {
+            val selectedBtn = view?.findViewById<RadioButton>(selectedId)
+            userAnswers[currentIndex] = rButtons.indexOf(selectedBtn)
+        }
+    }
+
+    private fun updateUI() {
+        if (currentIndex !in questionList.indices) return
+
+        val q = questionList[currentIndex]
+        questionDisplay.text = q.text
+        progressBar.progress = currentIndex + 1
+
+        optionsGroup.clearCheck()
+        for (i in rButtons.indices) {
+            rButtons[i].text = q.options[i]
+            if (userAnswers[currentIndex] == i) {
+                rButtons[i].isChecked = true
+            }
+        }
+
+        prevBtn.visibility = if (currentIndex == 0) View.INVISIBLE else View.VISIBLE
+        nextBtn.text = if (currentIndex == questionList.size - 1) "Finish" else "Next"
+    }
+    private fun calculateScore() {
+        countDownTimer?.cancel()
+        saveCurrentAnswer()
+
+        var score = 0
+        questionList.forEachIndexed { index, question ->
+            if (userAnswers[index] == question.correctAnswer) {
+                score++
+            }
+        }
+
+        val resultMessage = "Exam Finished!\n\nYour Score: $score / ${questionList.size}"
+
+        view?.let { fragmentView ->
+            val container = fragmentView.findViewById<LinearLayout>(R.id.quizContainer)
+            // Access context safely in a Fragment
+            val context = requireContext()
+
+            // 1. Get colors dynamically from the theme
+            val typedValue = android.util.TypedValue()
+
+            // Get Background Color
+            context.theme.resolveAttribute(android.R.attr.windowBackground, typedValue, true)
+            val bgColor = typedValue.data
+
+            // Get Text Color (colorOnSurface)
+            context.theme.resolveAttribute(com.google.android.material.R.attr.colorOnSurface, typedValue, true)
+            val textColor = typedValue.data
+            container?.apply {
+                removeAllViews()
+                // Ensure the container itself isn't black
+                setBackgroundColor(bgColor)
+                gravity = android.view.Gravity.CENTER
+                orientation = LinearLayout.VERTICAL
+            }
+
+            val scoreTv = TextView(requireContext()).apply {
+                text = resultMessage
+                setTextSize(android.util.TypedValue.COMPLEX_UNIT_SP, 26f)
+                setTextColor(textColor)
+                gravity = android.view.Gravity.CENTER
+                setTypeface(null, android.graphics.Typeface.BOLD)
+                layoutParams = LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.MATCH_PARENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+                )
+            }
+
+            val restartBtn = Button(requireContext()).apply {
+                text = "Back to Chapters"
+
+                // Fix: Explicitly set text color so it's not hidden
+                setTextColor(textColor) // A nice blue color
+
+                // Fix: Use null background to completely remove any default button shading/black boxes
+                setBackgroundColor(android.graphics.Color.TRANSPARENT)
+
+                layoutParams = LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.WRAP_CONTENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+                ).apply {
+                    topMargin = 60
+                    gravity = android.view.Gravity.CENTER_HORIZONTAL
+                }
+
+                setOnClickListener {
+                    activity?.onBackPressedDispatcher?.onBackPressed()
+                }
+            }
+
+            container?.addView(scoreTv)
+            container?.addView(restartBtn)
+        }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        countDownTimer?.cancel()
+    }
 }
