@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "chapter": 1,
+    "text": "Choose the correct spelling.",
+    "options": ["Beutiful", "Beautiful", "Beautifull"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 2,
+    "chapter": 1,
+    "text": "Choose the correct spelling.",
+    "options": ["Recieve", "Receive", "Receeve"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 3,
+    "chapter": 1,
+    "text": "Choose the correct spelling.",
+    "options": ["Enviroment", "Environment", "Envirenment"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 4,
+    "chapter": 1,
+    "text": "Choose the correct spelling.",
+    "options": ["Accomodation", "Acommodation", "Accommodation"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 5,
+    "chapter": 1,
+    "text": "Choose the correct spelling.",
+    "options": ["Succesful", "Successful", "Successfull"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 6,
+    "chapter": 1,
+    "text": "Choose the correct spelling.",
+    "options": ["Definately", "Definitely", "Definetly"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 7,
+    "chapter": 1,
+    "text": "Choose the correct spelling.",
+    "options": ["Seperate", "Separate", "Separete"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 8,
+    "chapter": 1,
+    "text": "Choose the correct spelling.",
+    "options": ["Tommorow", "Tomorrow", "Tomorow"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 9,
+    "chapter": 1,
+    "text": "Choose the correct spelling.",
+    "options": ["Necessary", "Necesary", "Necassary"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 10,
+    "chapter": 1,
+    "text": "Choose the correct spelling.",
+    "options": ["Occasion", "Ocassion", "Occassion"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 11,
+    "chapter": 1,
+    "text": "Choose the correct spelling.",
+    "options": ["Embarrass", "Embarass", "Embarras"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 12,
+    "chapter": 1,
+    "text": "Choose the correct spelling.",
+    "options": ["Goverment", "Government", "Governmant"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 13,
+    "chapter": 1,
+    "text": "Choose the correct spelling.",
+    "options": ["Knowlege", "Knowledge", "Knowlidge"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 14,
+    "chapter": 1,
+    "text": "Choose the correct spelling.",
+    "options": ["Rhythm", "Rythm", "Rhythum"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 15,
+    "chapter": 1,
+    "text": "Choose the correct spelling.",
+    "options": ["Priviledge", "Privilege", "Privelege"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 16,
+    "chapter": 1,
+    "text": "Choose the correct spelling.",
+    "options": ["Calendar", "Calender", "Callender"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 17,
+    "chapter": 1,
+    "text": "Choose the correct spelling.",
+    "options": ["Maintanance", "Maintenance", "Maintainance"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 18,
+    "chapter": 1,
+    "text": "Choose the correct spelling.",
+    "options": ["Questionnaire", "Questionare", "Questionnair"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 19,
+    "chapter": 1,
+    "text": "Choose the correct spelling.",
+    "options": ["Restaurant", "Restaurent", "Restorant"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 20,
+    "chapter": 1,
+    "text": "Choose the correct spelling.",
+    "options": ["Intelligent", "Inteligent", "Intellgent"],
+    "correctAnswer": 0
+  }
+]

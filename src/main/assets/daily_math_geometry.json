@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "chapter": 1,
+    "text": "How many sides does a triangle have?",
+    "options": ["2", "3", "4", "5"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 2,
+    "chapter": 1,
+    "text": "Which shape has four equal sides?",
+    "options": ["Rectangle", "Triangle", "Square", "Circle"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 3,
+    "chapter": 1,
+    "text": "How many angles does a rectangle have?",
+    "options": ["2", "3", "4", "5"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 4,
+    "chapter": 1,
+    "text": "Which shape has no sides?",
+    "options": ["Square", "Circle", "Triangle", "Pentagon"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 5,
+    "chapter": 1,
+    "text": "What is the sum of angles in a triangle?",
+    "options": ["90°", "180°", "270°", "360°"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 6,
+    "chapter": 1,
+    "text": "How many sides does a hexagon have?",
+    "options": ["5", "6", "7", "8"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 7,
+    "chapter": 1,
+    "text": "Which angle is exactly 90 degrees?",
+    "options": ["Acute angle", "Obtuse angle", "Right angle", "Straight angle"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 8,
+    "chapter": 1,
+    "text": "How many vertices does a square have?",
+    "options": ["2", "3", "4", "5"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 9,
+    "chapter": 1,
+    "text": "Which shape has five sides?",
+    "options": ["Hexagon", "Pentagon", "Octagon", "Triangle"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 10,
+    "chapter": 1,
+    "text": "A line segment has:",
+    "options": ["One endpoint", "Two endpoints", "No endpoints", "Three endpoints"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 11,
+    "chapter": 1,
+    "text": "Which shape has eight sides?",
+    "options": ["Pentagon", "Hexagon", "Heptagon", "Octagon"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 12,
+    "chapter": 1,
+    "text": "What do we call a triangle with all equal sides?",
+    "options": ["Scalene triangle", "Right triangle", "Equilateral triangle", "Obtuse triangle"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 13,
+    "chapter": 1,
+    "text": "Which tool is commonly used to measure angles?",
+    "options": ["Ruler", "Compass", "Protractor", "Divider"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 14,
+    "chapter": 1,
+    "text": "How many diagonals does a square have?",
+    "options": ["1", "2", "3", "4"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 15,
+    "chapter": 1,
+    "text": "Which angle is less than 90 degrees?",
+    "options": ["Right angle", "Straight angle", "Obtuse angle", "Acute angle"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 16,
+    "chapter": 1,
+    "text": "What is the name of a six-sided polygon?",
+    "options": ["Pentagon", "Hexagon", "Octagon", "Nonagon"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 17,
+    "chapter": 1,
+    "text": "Parallel lines never:",
+    "options": ["Meet", "Extend", "Remain equal distance apart", "Form straight lines"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 18,
+    "chapter": 1,
+    "text": "What is the perimeter of a square with side 5 cm?",
+    "options": ["10 cm", "15 cm", "20 cm", "25 cm"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 19,
+    "chapter": 1,
+    "text": "Which shape has exactly three vertices?",
+    "options": ["Square", "Rectangle", "Triangle", "Pentagon"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 20,
+    "chapter": 1,
+    "text": "What is the name of an angle greater than 90° but less than 180°?",
+    "options": ["Acute angle", "Right angle", "Straight angle", "Obtuse angle"],
+    "correctAnswer": 3
+  }
+]

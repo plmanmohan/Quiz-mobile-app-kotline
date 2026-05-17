@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "chapter": 1,
+    "text": "Riya has 12 apples and buys 8 more. How many apples does she have now?",
+    "options": ["18", "19", "20", "21"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 2,
+    "chapter": 1,
+    "text": "A shop had 50 chocolates. It sold 18 chocolates. How many chocolates are left?",
+    "options": ["30", "31", "32", "33"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 3,
+    "chapter": 1,
+    "text": "One notebook costs ₹15. What is the cost of 4 notebooks?",
+    "options": ["45", "50", "55", "60"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 4,
+    "chapter": 1,
+    "text": "A bus can carry 40 passengers. If 25 passengers are already inside, how many more can enter?",
+    "options": ["10", "15", "20", "25"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 5,
+    "chapter": 1,
+    "text": "A pack has 6 pencils. How many pencils are there in 5 packs?",
+    "options": ["24", "28", "30", "36"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 6,
+    "chapter": 1,
+    "text": "Rahul read 18 pages on Monday and 22 pages on Tuesday. How many pages did he read in total?",
+    "options": ["38", "39", "40", "41"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 7,
+    "chapter": 1,
+    "text": "There are 72 students in 8 rows. How many students are in each row?",
+    "options": ["7", "8", "9", "10"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 8,
+    "chapter": 1,
+    "text": "A toy costs ₹45. How much will 3 toys cost?",
+    "options": ["125", "130", "135", "140"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 9,
+    "chapter": 1,
+    "text": "A farmer has 96 mangoes and packs them equally into 12 boxes. How many mangoes are in each box?",
+    "options": ["6", "7", "8", "9"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 10,
+    "chapter": 1,
+    "text": "Sita had ₹100 and spent ₹37. How much money is left?",
+    "options": ["61", "62", "63", "64"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 11,
+    "chapter": 1,
+    "text": "A train travels 60 km in one hour. How far will it travel in 4 hours?",
+    "options": ["180 km", "200 km", "220 km", "240 km"],
+    "correctAnswer": 3
+  },
+  {
+    "id": 12,
+    "chapter": 1,
+    "text": "There are 5 baskets with 9 oranges each. How many oranges are there in total?",
+    "options": ["40", "45", "50", "55"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 13,
+    "chapter": 1,
+    "text": "A ribbon is 120 cm long. It is cut into 6 equal pieces. What is the length of each piece?",
+    "options": ["18 cm", "20 cm", "22 cm", "24 cm"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 14,
+    "chapter": 1,
+    "text": "Priya scored 78 marks in English and 85 marks in Math. What is her total score?",
+    "options": ["153", "158", "163", "168"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 15,
+    "chapter": 1,
+    "text": "A water bottle costs ₹25. How much do 7 bottles cost?",
+    "options": ["150", "160", "175", "180"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 16,
+    "chapter": 1,
+    "text": "A baker made 84 cupcakes and placed them equally on 7 trays. How many cupcakes are on each tray?",
+    "options": ["10", "11", "12", "13"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 17,
+    "chapter": 1,
+    "text": "There are 150 seats in a hall. If 98 seats are occupied, how many seats are empty?",
+    "options": ["50", "51", "52", "53"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 18,
+    "chapter": 1,
+    "text": "A box contains 24 chocolates. How many chocolates are there in 5 boxes?",
+    "options": ["100", "110", "120", "130"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 19,
+    "chapter": 1,
+    "text": "A car traveled 320 km in 4 hours. What was its speed per hour?",
+    "options": ["60 km/h", "70 km/h", "80 km/h", "90 km/h"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 20,
+    "chapter": 1,
+    "text": "Anita bought 3 pens for ₹12 each. How much did she spend in total?",
+    "options": ["24", "30", "36", "42"],
+    "correctAnswer": 2
+  }
+]

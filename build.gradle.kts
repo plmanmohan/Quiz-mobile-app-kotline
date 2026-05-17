@@ -1,9 +1,15 @@
 plugins {
     // These are the "Engine" parts
-    id("com.android.application") version "8.1.0"
-    id("org.jetbrains.kotlin.android") version "1.9.20"
-    // This is the "Translator" for your JSON
-    kotlin("plugin.serialization") version "1.9.20"
+//    id("com.android.application") version "8.2.0"
+//    id("org.jetbrains.kotlin.android") version "1.9.20"
+//
+//    id("com.google.devtools.ksp") version "1.9.20-1.0.14"
+//
+//    kotlin("plugin.serialization") version "1.9.20"
+    id("com.android.application") version "8.5.2"
+    id("org.jetbrains.kotlin.android") version "1.9.24"
+    id("com.google.devtools.ksp") version "1.9.24-1.0.20"
+    kotlin("plugin.serialization") version "1.9.24"
 }
 
 android {
@@ -48,7 +54,8 @@ android {
         // viewBinding = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.4"
+        kotlinCompilerExtensionVersion = "1.5.14"
+
     }
     packaging {
         resources {
@@ -87,4 +94,14 @@ dependencies {
     implementation("com.google.code.gson:gson:2.10.1")
     implementation("com.google.code.gson:gson:2.10.1")
     implementation("com.google.android.material:material:1.9.0")
+
+//    val room_version = "2.6.1"
+//    implementation("androidx.room:room-runtime:$room_version")
+//    kapt("androidx.room:room-compiler:$room_version")
+//    implementation("androidx.room:room-ktx:$room_version")
+//    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
+    val room_version = "2.6.1"
+    implementation("androidx.room:room-runtime:$room_version")
+    ksp("androidx.room:room-compiler:$room_version")
+    implementation("androidx.room:room-ktx:$room_version")
 }

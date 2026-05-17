@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "chapter": 1,
+    "text": "2 × ? = 16",
+    "options": ["6", "7", "8", "9"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 2,
+    "chapter": 1,
+    "text": "3 × ? = 21",
+    "options": ["5", "6", "7", "8"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 3,
+    "chapter": 1,
+    "text": "4 × ? = 36",
+    "options": ["7", "8", "9", "10"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 4,
+    "chapter": 1,
+    "text": "5 × ? = 45",
+    "options": ["7", "8", "9", "10"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 5,
+    "chapter": 1,
+    "text": "6 × ? = 54",
+    "options": ["7", "8", "9", "10"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 6,
+    "chapter": 1,
+    "text": "7 × ? = 63",
+    "options": ["7", "8", "9", "10"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 7,
+    "chapter": 1,
+    "text": "8 × ? = 72",
+    "options": ["7", "8", "9", "10"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 8,
+    "chapter": 1,
+    "text": "9 × ? = 81",
+    "options": ["7", "8", "9", "10"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 9,
+    "chapter": 1,
+    "text": "10 × ? = 100",
+    "options": ["8", "9", "10", "11"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 10,
+    "chapter": 1,
+    "text": "11 × ? = 88",
+    "options": ["6", "7", "8", "9"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 11,
+    "chapter": 1,
+    "text": "12 × ? = 96",
+    "options": ["6", "7", "8", "9"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 12,
+    "chapter": 1,
+    "text": "13 × ? = 117",
+    "options": ["7", "8", "9", "10"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 13,
+    "chapter": 1,
+    "text": "14 × ? = 98",
+    "options": ["5", "6", "7", "8"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 14,
+    "chapter": 1,
+    "text": "15 × ? = 150",
+    "options": ["8", "9", "10", "11"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 15,
+    "chapter": 1,
+    "text": "16 × ? = 144",
+    "options": ["7", "8", "9", "10"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 16,
+    "chapter": 1,
+    "text": "18 × ? = 162",
+    "options": ["7", "8", "9", "10"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 17,
+    "chapter": 1,
+    "text": "20 × ? = 200",
+    "options": ["8", "9", "10", "11"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 18,
+    "chapter": 1,
+    "text": "22 × ? = 176",
+    "options": ["6", "7", "8", "9"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 19,
+    "chapter": 1,
+    "text": "24 × ? = 216",
+    "options": ["7", "8", "9", "10"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 20,
+    "chapter": 1,
+    "text": "25 × ? = 250",
+    "options": ["8", "9", "10", "11"],
+    "correctAnswer": 2
+  }
+]

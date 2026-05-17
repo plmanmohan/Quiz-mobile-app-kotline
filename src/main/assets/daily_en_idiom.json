@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "chapter": 1,
+    "text": "What does the idiom 'A piece of cake' mean?",
+    "options": ["Very difficult", "Very easy", "Very expensive"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 2,
+    "chapter": 1,
+    "text": "What does the phrase 'Break the ice' mean?",
+    "options": ["Start a conversation", "Break something cold", "Feel angry"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 3,
+    "chapter": 1,
+    "text": "What does the idiom 'Hit the sack' mean?",
+    "options": ["Punch a bag", "Go to sleep", "Carry luggage"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 4,
+    "chapter": 1,
+    "text": "What does the idiom 'Under the weather' mean?",
+    "options": ["Feeling sick", "Standing outside", "Feeling happy"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 5,
+    "chapter": 1,
+    "text": "What does the phrase 'Once in a blue moon' mean?",
+    "options": ["Very often", "Very rarely", "Every month"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 6,
+    "chapter": 1,
+    "text": "What does the idiom 'Spill the beans' mean?",
+    "options": ["Cook food", "Reveal a secret", "Make a mess"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 7,
+    "chapter": 1,
+    "text": "What does the phrase 'Cost an arm and a leg' mean?",
+    "options": ["Very cheap", "Very expensive", "Very dangerous"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 8,
+    "chapter": 1,
+    "text": "What does the idiom 'Bite your tongue' mean?",
+    "options": ["Stay silent", "Eat quickly", "Speak loudly"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 9,
+    "chapter": 1,
+    "text": "What does the phrase 'Burn the midnight oil' mean?",
+    "options": ["Waste electricity", "Work late at night", "Light a lamp"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 10,
+    "chapter": 1,
+    "text": "What does the idiom 'Cry over spilled milk' mean?",
+    "options": ["Be upset about the past", "Drink milk", "Make someone cry"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 11,
+    "chapter": 1,
+    "text": "What does the phrase 'The ball is in your court' mean?",
+    "options": ["It is your turn to decide", "Play a game", "Go to court"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 12,
+    "chapter": 1,
+    "text": "What does the idiom 'See eye to eye' mean?",
+    "options": ["Look carefully", "Agree with someone", "Watch closely"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 13,
+    "chapter": 1,
+    "text": "What does the phrase 'Add fuel to the fire' mean?",
+    "options": ["Stop an argument", "Increase trouble", "Cook food"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 14,
+    "chapter": 1,
+    "text": "What does the idiom 'Hold your horses' mean?",
+    "options": ["Ride a horse", "Wait patiently", "Run quickly"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 15,
+    "chapter": 1,
+    "text": "What does the phrase 'Kill two birds with one stone' mean?",
+    "options": ["Do two tasks at once", "Go hunting", "Solve one problem"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 16,
+    "chapter": 1,
+    "text": "What does the idiom 'Let the cat out of the bag' mean?",
+    "options": ["Free an animal", "Reveal a secret", "Buy a cat"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 17,
+    "chapter": 1,
+    "text": "What does the phrase 'On cloud nine' mean?",
+    "options": ["Very happy", "Very sleepy", "Very angry"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 18,
+    "chapter": 1,
+    "text": "What does the idiom 'A blessing in disguise' mean?",
+    "options": ["A hidden problem", "Something good that seemed bad", "A lucky charm"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 19,
+    "chapter": 1,
+    "text": "What does the phrase 'Beat around the bush' mean?",
+    "options": ["Avoid the main topic", "Work in a garden", "Speak clearly"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 20,
+    "chapter": 1,
+    "text": "What does the idiom 'Call it a day' mean?",
+    "options": ["Start working", "Stop working for the day", "Take a holiday"],
+    "correctAnswer": 1
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "chapter": 1,
+    "text": "Choose the correct sentence in Present Simple tense.",
+    "options": [
+      "She is going to school.",
+      "She goes to school.",
+      "She went to school.",
+      "She has gone to school."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 2,
+    "chapter": 1,
+    "text": "Choose the correct sentence in Past Continuous tense.",
+    "options": [
+      "They played football.",
+      "They were playing football.",
+      "They are playing football.",
+      "They have played football."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 3,
+    "chapter": 1,
+    "text": "Choose the correct sentence in Future Simple tense.",
+    "options": [
+      "I will visit Delhi tomorrow.",
+      "I visited Delhi tomorrow.",
+      "I am visiting Delhi yesterday.",
+      "I have visited Delhi."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 4,
+    "chapter": 1,
+    "text": "Identify the sentence in Present Continuous tense.",
+    "options": [
+      "He eats dinner.",
+      "He ate dinner.",
+      "He is eating dinner.",
+      "He has eaten dinner."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 5,
+    "chapter": 1,
+    "text": "Choose the correct sentence in Past Perfect tense.",
+    "options": [
+      "She had completed her work before noon.",
+      "She completes her work before noon.",
+      "She is completing her work before noon.",
+      "She will complete her work before noon."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 6,
+    "chapter": 1,
+    "text": "Choose the correct sentence in Present Perfect tense.",
+    "options": [
+      "We have finished the project.",
+      "We finished the project tomorrow.",
+      "We are finishing the project yesterday.",
+      "We had finish the project."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 7,
+    "chapter": 1,
+    "text": "Which sentence is in Future Continuous tense?",
+    "options": [
+      "She will be studying at 8 PM.",
+      "She studies at 8 PM.",
+      "She studied at 8 PM.",
+      "She has studied at 8 PM."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 8,
+    "chapter": 1,
+    "text": "Choose the correct sentence in Simple Past tense.",
+    "options": [
+      "They are watching a movie.",
+      "They watch a movie.",
+      "They watched a movie.",
+      "They will watch a movie."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 9,
+    "chapter": 1,
+    "text": "Choose the sentence in Present Perfect Continuous tense.",
+    "options": [
+      "I have been reading for two hours.",
+      "I was reading for two hours.",
+      "I read for two hours.",
+      "I will read for two hours."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 10,
+    "chapter": 1,
+    "text": "Choose the correct sentence in Future Perfect tense.",
+    "options": [
+      "By next year, he will have completed college.",
+      "By next year, he completed college.",
+      "By next year, he is completing college.",
+      "By next year, he has completed college."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 11,
+    "chapter": 1,
+    "text": "Identify the sentence in Past Perfect Continuous tense.",
+    "options": [
+      "She had been working all day.",
+      "She has been working all day.",
+      "She is working all day.",
+      "She worked all day."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 12,
+    "chapter": 1,
+    "text": "Choose the correct sentence in Future Perfect Continuous tense.",
+    "options": [
+      "By July, they will have been living here for ten years.",
+      "By July, they have lived here for ten years.",
+      "By July, they lived here for ten years.",
+      "By July, they are living here for ten years."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 13,
+    "chapter": 1,
+    "text": "Which sentence is in Present Simple tense?",
+    "options": [
+      "The train arrives at 6 PM.",
+      "The train arrived at 6 PM.",
+      "The train is arriving at 6 PM.",
+      "The train has arrived at 6 PM."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 14,
+    "chapter": 1,
+    "text": "Choose the correct sentence in Past Continuous tense.",
+    "options": [
+      "I am sleeping when you called.",
+      "I slept when you called.",
+      "I was sleeping when you called.",
+      "I have slept when you called."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 15,
+    "chapter": 1,
+    "text": "Choose the sentence in Present Perfect tense.",
+    "options": [
+      "He has written a letter.",
+      "He writes a letter.",
+      "He wrote a letter.",
+      "He is writing a letter."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 16,
+    "chapter": 1,
+    "text": "Identify the sentence in Future Simple tense.",
+    "options": [
+      "They will travel next month.",
+      "They traveled next month.",
+      "They are traveling next month.",
+      "They have traveled next month."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 17,
+    "chapter": 1,
+    "text": "Choose the correct sentence in Present Continuous tense.",
+    "options": [
+      "Birds fly in the sky.",
+      "Birds flew in the sky.",
+      "Birds are flying in the sky.",
+      "Birds have flown in the sky."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "id": 18,
+    "chapter": 1,
+    "text": "Choose the sentence in Past Perfect tense.",
+    "options": [
+      "They had left before the rain started.",
+      "They leave before the rain started.",
+      "They are leaving before the rain started.",
+      "They have left before the rain started."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 19,
+    "chapter": 1,
+    "text": "Choose the correct sentence in Future Continuous tense.",
+    "options": [
+      "At 9 PM, I will be watching TV.",
+      "At 9 PM, I watch TV.",
+      "At 9 PM, I watched TV.",
+      "At 9 PM, I have watched TV."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 20,
+    "chapter": 1,
+    "text": "Identify the sentence in Present Perfect Continuous tense.",
+    "options": [
+      "She has been learning French for a year.",
+      "She learned French for a year.",
+      "She learns French for a year.",
+      "She will learn French for a year."
+    ],
+    "correctAnswer": 0
+  }
+]

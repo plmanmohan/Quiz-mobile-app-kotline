@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "chapter": 1,
+    "text": "What is 15 + 27?",
+    "options": ["40", "42", "44", "46"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 2,
+    "chapter": 1,
+    "text": "What is 50 - 18?",
+    "options": ["30", "31", "32", "33"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 3,
+    "chapter": 1,
+    "text": "What is 12 × 4?",
+    "options": ["36", "42", "48", "52"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 4,
+    "chapter": 1,
+    "text": "What is 81 ÷ 9?",
+    "options": ["7", "8", "9", "10"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 5,
+    "chapter": 1,
+    "text": "What is 25 + 39?",
+    "options": ["62", "63", "64", "65"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 6,
+    "chapter": 1,
+    "text": "What is 100 - 47?",
+    "options": ["51", "52", "53", "54"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 7,
+    "chapter": 1,
+    "text": "What is 9 × 7?",
+    "options": ["56", "63", "72", "81"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 8,
+    "chapter": 1,
+    "text": "What is 64 ÷ 8?",
+    "options": ["6", "7", "8", "9"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 9,
+    "chapter": 1,
+    "text": "What is 13 + 18?",
+    "options": ["29", "30", "31", "32"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 10,
+    "chapter": 1,
+    "text": "What is 90 - 35?",
+    "options": ["45", "50", "55", "60"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 11,
+    "chapter": 1,
+    "text": "What is 11 × 11?",
+    "options": ["111", "121", "131", "141"],
+    "correctAnswer": 1
+  },
+  {
+    "id": 12,
+    "chapter": 1,
+    "text": "What is 72 ÷ 6?",
+    "options": ["10", "11", "12", "13"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 13,
+    "chapter": 1,
+    "text": "What is 45 + 16?",
+    "options": ["59", "60", "61", "62"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 14,
+    "chapter": 1,
+    "text": "What is 200 - 125?",
+    "options": ["65", "70", "75", "80"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 15,
+    "chapter": 1,
+    "text": "What is 14 × 5?",
+    "options": ["60", "65", "70", "75"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 16,
+    "chapter": 1,
+    "text": "What is 144 ÷ 12?",
+    "options": ["10", "11", "12", "13"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 17,
+    "chapter": 1,
+    "text": "What is 28 + 37?",
+    "options": ["63", "64", "65", "66"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 18,
+    "chapter": 1,
+    "text": "What is 150 - 68?",
+    "options": ["80", "81", "82", "83"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 19,
+    "chapter": 1,
+    "text": "What is 8 × 9?",
+    "options": ["64", "70", "72", "81"],
+    "correctAnswer": 2
+  },
+  {
+    "id": 20,
+    "chapter": 1,
+    "text": "What is 99 ÷ 11?",
+    "options": ["7", "8", "9", "10"],
+    "correctAnswer": 2
+  }
+]

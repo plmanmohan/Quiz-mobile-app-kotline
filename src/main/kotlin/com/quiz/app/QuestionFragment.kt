@@ -9,6 +9,8 @@ import android.widget.*
 import androidx.fragment.app.Fragment
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import androidx.lifecycle.lifecycleScope
+import kotlinx.coroutines.launch
 
 class QuestionFragment : Fragment() {
 
@@ -173,7 +175,12 @@ class QuestionFragment : Fragment() {
         }
 
         val resultMessage = "Exam Finished!\n\nYour Score: $score / ${questionList.size}"
-
+        // --- SAVE TO DATABASE ---
+        lifecycleScope.launch {
+            val db = AppDatabase.getDatabase(requireContext())
+            val resultEntry = QuizResult(standard = userStandard, subject = userSubject, chapter = currentChapter, score = score, totalQuestions = questionList.size)
+            db.quizDao().insertResult(resultEntry)
+        }
         view?.let { fragmentView ->
             val container = fragmentView.findViewById<LinearLayout>(R.id.quizContainer)
             // Access context safely in a Fragment

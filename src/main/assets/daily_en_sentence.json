@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "chapter": 1,
+    "text": "Choose the correct sentence.",
+    "options": [
+      "She do not like coffee.",
+      "She does not like coffee.",
+      "She not like coffee."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 2,
+    "chapter": 1,
+    "text": "Choose the correct sentence.",
+    "options": [
+      "He go to school every day.",
+      "He goes to school every day.",
+      "He going to school every day."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 3,
+    "chapter": 1,
+    "text": "Choose the correct sentence.",
+    "options": [
+      "They was playing cricket.",
+      "They were playing cricket.",
+      "They is playing cricket."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 4,
+    "chapter": 1,
+    "text": "Choose the correct sentence.",
+    "options": [
+      "I have finished my homework.",
+      "I has finished my homework.",
+      "I having finished my homework."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 5,
+    "chapter": 1,
+    "text": "Choose the correct sentence.",
+    "options": [
+      "The boys is running fast.",
+      "The boys are running fast.",
+      "The boys runs fast."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 6,
+    "chapter": 1,
+    "text": "Choose the correct sentence.",
+    "options": [
+      "She can sings beautifully.",
+      "She can sing beautifully.",
+      "She can sung beautifully."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 7,
+    "chapter": 1,
+    "text": "Choose the correct sentence.",
+    "options": [
+      "We enjoyed the movie yesterday.",
+      "We enjoy the movie yesterday.",
+      "We enjoys the movie yesterday."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 8,
+    "chapter": 1,
+    "text": "Choose the correct sentence.",
+    "options": [
+      "There are many books on the table.",
+      "There is many books on the table.",
+      "There many books on the table."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 9,
+    "chapter": 1,
+    "text": "Choose the correct sentence.",
+    "options": [
+      "He don't know the answer.",
+      "He doesn't know the answer.",
+      "He not know the answer."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 10,
+    "chapter": 1,
+    "text": "Choose the correct sentence.",
+    "options": [
+      "My sister and I are friends.",
+      "My sister and me are friends.",
+      "Me and my sister is friends."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 11,
+    "chapter": 1,
+    "text": "Choose the correct sentence.",
+    "options": [
+      "She was cooking dinner when I arrived.",
+      "She were cooking dinner when I arrived.",
+      "She cooking dinner when I arrived."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 12,
+    "chapter": 1,
+    "text": "Choose the correct sentence.",
+    "options": [
+      "Each student have a notebook.",
+      "Each student has a notebook.",
+      "Each student having a notebook."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "id": 13,
+    "chapter": 1,
+    "text": "Choose the correct sentence.",
+    "options": [
+      "The sun rises in the east.",
+      "The sun rise in the east.",
+      "The sun rising in the east."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 14,
+    "chapter": 1,
+    "text": "Choose the correct sentence.",
+    "options": [
+      "I am learning English now.",
+      "I learning English now.",
+      "I learn English now."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 15,
+    "chapter": 1,
+    "text": "Choose the correct sentence.",
+    "options": [
+      "She has two younger brothers.",
+      "She have two younger brothers.",
+      "She having two younger brothers."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 16,
+    "chapter": 1,
+    "text": "Choose the correct sentence.",
+    "options": [
+      "The children were happy.",
+      "The children was happy.",
+      "The children is happy."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 17,
+    "chapter": 1,
+    "text": "Choose the correct sentence.",
+    "options": [
+      "Do you like ice cream?",
+      "Does you like ice cream?",
+      "You do like ice cream?"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 18,
+    "chapter": 1,
+    "text": "Choose the correct sentence.",
+    "options": [
+      "He has been working here for five years.",
+      "He have been working here for five years.",
+      "He has working here for five years."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 19,
+    "chapter": 1,
+    "text": "Choose the correct sentence.",
+    "options": [
+      "Neither of the answers is correct.",
+      "Neither of the answers are correct.",
+      "Neither of the answers were correct."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 20,
+    "chapter": 1,
+    "text": "Choose the correct sentence.",
+    "options": [
+      "If I were you, I would apologize.",
+      "If I was you, I would apologize.",
+      "If I am you, I would apologize."
+    ],
+    "correctAnswer": 0
+  }
+]
