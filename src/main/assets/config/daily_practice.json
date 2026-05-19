@@ -6,6 +6,5 @@
   {"id": "history", "name": "History", "icon": "ic_history"},
   {"id": "hindi", "name": "Hindi", "icon": "ic_hindi"},
   {"id": "sanscrit", "name": "Sanskrit", "icon": "ic_sanskrit"},
-  {"id": "gk", "name": "GK", "icon": "ic_gk"},
-  {"id": "daillypractice", "name": "Mental Exercise", "icon": "ic_practice"}
+  {"id": "gk", "name": "GK", "icon": "ic_gk"}
 ]

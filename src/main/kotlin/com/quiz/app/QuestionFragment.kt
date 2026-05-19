@@ -11,6 +11,9 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 class QuestionFragment : Fragment() {
 
@@ -67,8 +70,33 @@ class QuestionFragment : Fragment() {
             view.findViewById(R.id.option2),
             view.findViewById(R.id.option3)
         )
+        val isDailyPractice =
+            arguments?.getBoolean(
+                "IS_DAILY_PRACTICE",
+                false
+            ) ?: false
+        if (isDailyPractice) {
 
-        setupQuiz(view)
+            val json =
+                arguments?.getString("QUESTION_LIST")
+
+            if (json != null) {
+
+                val type =
+                    object : TypeToken<List<Question>>() {}.type
+
+                questionList =
+                    Gson().fromJson(json, type)
+
+                setupQuiz()
+            }
+
+        } else {
+
+            // existing chapter logic
+            loadQuestionsFromChapter(view)
+        }
+        // setupQuiz(view)
         startGlobalTimer() // Start the timer ONCE for the whole exam
     }
 
@@ -99,7 +127,30 @@ class QuestionFragment : Fragment() {
         }.start()
     }
 
-    private fun setupQuiz(view: View) {
+    private fun setupQuiz() {
+        progressBar.max = questionList.size
+        // Button Listeners
+        nextBtn.setOnClickListener {
+            saveCurrentAnswer()
+            if (currentIndex < questionList.size - 1) {
+                currentIndex++
+                updateUI()
+            } else {
+                calculateScore() // Final Submission
+            }
+        }
+
+        prevBtn.setOnClickListener {
+            saveCurrentAnswer()
+            if (currentIndex > 0) {
+                currentIndex--
+                updateUI()
+            }
+        }
+
+        updateUI()
+    }
+    private fun loadQuestionsFromChapter(view: View) {
         val fileName = "questions_${formattedStd}_ch${currentChapter}_${userSubject}.json"
         try {
             val jsonString = requireContext().assets.open(fileName).bufferedReader().use { it.readText() }
@@ -109,28 +160,9 @@ class QuestionFragment : Fragment() {
 
             val chapterTitle = view.findViewById<TextView>(R.id.chapterTitle)
             chapterTitle.text = "Chapter $currentChapter: ${userSubject.uppercase()}"
-            progressBar.max = questionList.size
 
-            // Button Listeners
-            nextBtn.setOnClickListener {
-                saveCurrentAnswer()
-                if (currentIndex < questionList.size - 1) {
-                    currentIndex++
-                    updateUI()
-                } else {
-                    calculateScore() // Final Submission
-                }
-            }
+            setupQuiz()
 
-            prevBtn.setOnClickListener {
-                saveCurrentAnswer()
-                if (currentIndex > 0) {
-                    currentIndex--
-                    updateUI()
-                }
-            }
-
-            updateUI()
 
         } catch (e: Exception) {
             Toast.makeText(requireContext(), "Error loading quiz", Toast.LENGTH_SHORT).show()
@@ -178,7 +210,14 @@ class QuestionFragment : Fragment() {
         // --- SAVE TO DATABASE ---
         lifecycleScope.launch {
             val db = AppDatabase.getDatabase(requireContext())
-            val resultEntry = QuizResult(standard = userStandard, subject = userSubject, chapter = currentChapter, score = score, totalQuestions = questionList.size)
+            val currentDateTime = SimpleDateFormat(
+                "yyyy-MM-dd HH:mm:ss",
+                Locale.getDefault()
+            ).format(Date())
+            val resultEntry = QuizResult(
+                standard = userStandard, subject = userSubject,
+                chapter = currentChapter, score = score,
+                totalQuestions = questionList.size, createdAt = currentDateTime)
             db.quizDao().insertResult(resultEntry)
         }
         view?.let { fragmentView ->

@@ -12,4 +12,14 @@ interface QuizDao {
 
     @Query("SELECT COUNT(*) FROM quiz_results")
     suspend fun getTotalAttendance(): Int
+
+    @Query("""
+        SELECT 
+        SUM(score) * 100.0 / SUM(totalQuestions)
+        FROM quiz_results
+        """)
+    suspend fun getAccuracy(): Float
+
+    @Query("DELETE FROM quiz_results")
+    suspend fun deleteAllResults()
 }

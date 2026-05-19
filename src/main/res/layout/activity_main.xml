@@ -48,7 +48,49 @@
                     android:inputType="none"
                     android:textColor="?attr/colorOnSurface"/>
         </com.google.android.material.textfield.TextInputLayout>
+        <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:alignmentMode="alignMargins">
 
+            <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/carddailly"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="6dp"
+                    app:cardBackgroundColor="?attr/colorSurface"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                    <ImageView
+                            android:id="@+id/cardIcon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="8dp"
+                            app:tint="?attr/colorPrimary" />
+
+                    <TextView
+                            android:id="@+id/cardText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="?attr/colorOnSurface"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </GridLayout>
         <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

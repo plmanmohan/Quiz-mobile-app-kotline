@@ -10,6 +10,7 @@ import com.google.android.material.card.MaterialCardView
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.content.ContentProviderCompat.requireContext
 import com.google.android.material.switchmaterial.SwitchMaterial
 
 // Configuration for Subject
@@ -97,6 +98,39 @@ class MainActivity : AppCompatActivity() {
         try {
             val jsonString = assets.open("subjects.json").bufferedReader().use { it.readText() }
             val subjectList: List<SubjectConfig> = Gson().fromJson(jsonString, object : TypeToken<List<SubjectConfig>>() {}.type)
+
+            val dailyPracticeCard = findViewById<MaterialCardView>(R.id.carddailly)
+
+            val title = dailyPracticeCard.findViewById<TextView>(R.id.cardText)
+            val iconView = dailyPracticeCard.findViewById<ImageView>(R.id.cardIcon)
+            title.text = subjectList[8].name
+            val resourceId = resources.getIdentifier(subjectList[8].icon, "drawable", packageName)
+            if (resourceId != 0) {
+                iconView.setImageResource(resourceId)
+            } else {
+                // Optional: set a default icon if the specific one is missing
+                iconView.setImageResource(android.R.drawable.ic_menu_help)
+            }
+            dailyPracticeCard.setOnClickListener {
+                try {
+                    val questionList =
+                        DailyPracticeGenerator.generateQuestions(this)
+
+                    val intent = Intent(this, QuizActivity::class.java)
+
+                    // convert question list to JSON and pass
+                    val json = Gson().toJson(questionList)
+
+                    intent.putExtra("QUIZ_MODE", "DAILY")
+                    intent.putExtra("QUESTION_LIST", json)
+
+                    startActivity(intent)
+
+                } catch (e: Exception) {
+                    e.printStackTrace()
+                    Toast.makeText(this, "Failed to load Daily Practice", Toast.LENGTH_SHORT).show()
+                }
+            }
 
             // These MUST match the IDs in your activity_main.xml
             val cardIds = arrayOf(R.id.card1, R.id.card2, R.id.card3, R.id.card4,

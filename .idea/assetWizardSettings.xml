@@ -305,7 +305,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$PROJECT_DIR$/../../../Android/Sdk/icons/material/materialsymbolsoutlined/assistant_device/outline_assistant_device_24.xml" />
+                                      <entry key="url" value="file:/$PROJECT_DIR$/../../../Android/Sdk/icons/material/materialsymbolsoutlined/accessible_forward/outline_accessible_forward_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -315,7 +315,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_gk" />
+                            <entry key="outputName" value="ic_practice" />
                             <entry key="sourceFile" value="D:\expt\quiz_app\quix-app" />
                           </map>
                         </option>

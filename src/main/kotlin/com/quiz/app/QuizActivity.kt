@@ -2,11 +2,14 @@ package com.quiz.app
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 
 
 class QuizActivity : AppCompatActivity() {
     private var userStandard: String = ""
     private var userSubject: String = ""
+    private var questionList: List<Question> = emptyList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,6 +18,14 @@ class QuizActivity : AppCompatActivity() {
         // 1. Get Data from Intent
         userStandard = intent.getStringExtra("STD") ?: "Standard 1"
         userSubject = intent.getStringExtra("SUBJECT") ?: "math"
+
+        // ADD THIS BLOCK HERE
+        val dailyJson = intent.getStringExtra("QUESTION_LIST")
+
+        if (dailyJson != null) {
+            switchToDailyQuestions(dailyJson)
+            return
+        }
 
         // 2. Load the ChapterFragment for the first time
         if (savedInstanceState == null) { // Only load if the app isn't being restored from a rotation
@@ -58,6 +69,21 @@ class QuizActivity : AppCompatActivity() {
                 android.R.anim.slide_in_left,
                 android.R.anim.slide_out_right
             ) // Optional: Adds a nice smooth transition
+            .replace(R.id.fragment_container, fragment)
+            .addToBackStack(null) // CRITICAL: This allows the "Back" button to work!
+            .commit()
+    }
+    fun switchToDailyQuestions(questionJson: String) {
+
+        val fragment = QuestionFragment()
+
+        val bundle = Bundle()
+        bundle.putString("QUESTION_LIST", questionJson)
+        bundle.putBoolean("IS_DAILY_PRACTICE", true)
+
+        fragment.arguments = bundle
+
+        supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container, fragment)
             .addToBackStack(null) // CRITICAL: This allows the "Back" button to work!
             .commit()
